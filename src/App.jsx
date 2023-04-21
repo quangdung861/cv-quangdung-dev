@@ -212,13 +212,6 @@ function App() {
                       - Source code:
                       https://github.com/quangdung861/cv-quangdung-dev.git
                     </a>
-                    <a
-                      className="custome-tag-link"
-                      href="https://quangdung861.github.io/cv-quangdung-dev/"
-                    >
-                      - Project deployment:
-                      https://quangdung861.github.io/cv-quangdung-dev/
-                    </a>
                 </div>
                 <div className="resume-date">
                   <span>Apr 2023</span>
@@ -306,6 +299,7 @@ function App() {
                       - Source code:
                       https://github.com/quangdung861/trello-quangdungdev-web.git
                     </a>
+                    <br />
                     <a
                       className="custome-tag-link"
                       href="https://quangdung861.github.io/trello-quangdungdev-web/"
