@@ -205,6 +205,20 @@ function App() {
                     <i class="fa-solid fa-bookmark"></i> This is where I
                     describe myself.
                   </p>
+                  <a
+                      className="custome-tag-link"
+                      href="https://github.com/quangdung861/cv-quangdung-dev.git"
+                    >
+                      - Source code:
+                      https://github.com/quangdung861/cv-quangdung-dev.git
+                    </a>
+                    <a
+                      className="custome-tag-link"
+                      href="https://quangdung861.github.io/cv-quangdung-dev/"
+                    >
+                      - Project deployment:
+                      https://quangdung861.github.io/cv-quangdung-dev/
+                    </a>
                 </div>
                 <div className="resume-date">
                   <span>Apr 2023</span>
@@ -291,6 +305,13 @@ function App() {
                     >
                       - Source code:
                       https://github.com/quangdung861/trello-quangdungdev-web.git
+                    </a>
+                    <a
+                      className="custome-tag-link"
+                      href="https://quangdung861.github.io/trello-quangdungdev-web/"
+                    >
+                      - Project deployment:
+                      https://quangdung861.github.io/trello-quangdungdev-web/
                     </a>
                     <br />
                   </p>
