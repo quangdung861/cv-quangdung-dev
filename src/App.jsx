@@ -3,14 +3,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.scss";
 
-import avatar from "./assets/images/avatar.JPG";
+import avatar from "./assets/images/avatar.jpg";
 import interest1 from "./assets/images/interest/interest1.jpg";
 import interest2 from "./assets/images/interest/interest2.jpg";
 import interest3 from "./assets/images/interest/interest3.jpg";
 import interest4 from "./assets/images/interest/interest4.jpg";
 import interest5 from "./assets/images/interest/interest5.png";
-import interest6 from "./assets/images/interest/interest6.JPG";
-import interest7 from "./assets/images/interest/interest7.JPG";
+import interest6 from "./assets/images/interest/interest6.jpg";
+import interest7 from "./assets/images/interest/interest7.jpg";
 
 function App() {
   const [openModalArea, setOpenModalArea] = useState();
