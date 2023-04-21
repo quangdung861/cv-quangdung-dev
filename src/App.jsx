@@ -16,6 +16,8 @@ function App() {
 
   const [showBtnUpToTop, setShowBtnUpToTop] = useState(false);
 
+  const [showNavListMobile, setShowNavListMobile] = useState(false);
+
   const interestImages = [
     interest1,
     interest2,
@@ -54,7 +56,19 @@ function App() {
 
   return (
     <div className="App">
-      <div className="sidebar-left">
+      <div className="appbar-collapse">
+        <div className="logo-brand">
+          <img className="img-avatar" src={avatar} alt="" />
+        </div>
+        <i
+          class="fa-solid fa-bars btn-hamburger"
+          onClick={() => setShowNavListMobile(!showNavListMobile)}
+        ></i>
+      </div>
+
+      <div
+        className={showNavListMobile ? "sidebar-left active" : "sidebar-left"}
+      >
         <span className="avatar">
           <img className="img-avatar" src={avatar} alt="" />
         </span>
@@ -194,7 +208,6 @@ function App() {
           <div className="resume-section-detail">
             <h2 className="title">PROJECTS</h2>
             <div className="resume-item">
-
               <div className="resume-content content-flex">
                 <div>
                   <h3 className="resume-content-name">CV PROFILE ONLINE</h3>
@@ -206,12 +219,12 @@ function App() {
                     describe myself.
                   </p>
                   <a
-                      className="custome-tag-link"
-                      href="https://github.com/quangdung861/cv-quangdung-dev.git"
-                    >
-                      - Source code:
-                      https://github.com/quangdung861/cv-quangdung-dev.git
-                    </a>
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/cv-quangdung-dev.git"
+                  >
+                    - Source code:
+                    https://github.com/quangdung861/cv-quangdung-dev.git
+                  </a>
                 </div>
                 <div className="resume-date">
                   <span>Apr 2023</span>
