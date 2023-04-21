@@ -218,12 +218,45 @@ function App() {
                     <i class="fa-solid fa-bookmark"></i> This is where I
                     describe myself.
                   </p>
+                  <p className="content-item">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span className="lead"> My responsibilities: </span> <br />
+                    • Design UI <br />
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      - Gained experience and skills on:
+                    </span>
+                    <br />
+                    • Experience in using viteJS. <br />
+                    • Experience in using fontawesome.
+                    <br />
+                    • Design UI with BootstrapV5.2, Sass.
+                    <br />
+                    • Experience handle event scroll, image.
+                    <br />
+                    • Experience in using deploy project in github.
+                    <br />
+                    • Experience in Responsive design.
+                    <br />
+                  </p>
                   <a
                     className="custome-tag-link"
                     href="https://github.com/quangdung861/cv-quangdung-dev.git"
                   >
                     - Source code:
                     https://github.com/quangdung861/cv-quangdung-dev.git
+                  </a>
+                  <br />
+                  <a
+                    className="custome-tag-link"
+                    href="https://quangdung861.github.io/cv-quangdung-dev/"
+                  >
+                    - Project deployment:
+                    https://quangdung861.github.io/cv-quangdung-dev
                   </a>
                 </div>
                 <div className="resume-date">
@@ -318,7 +351,7 @@ function App() {
                       href="https://quangdung861.github.io/trello-quangdungdev-web/"
                     >
                       - Project deployment:
-                      https://quangdung861.github.io/trello-quangdungdev-web/
+                      https://quangdung861.github.io/trello-quangdungdev-web
                     </a>
                     <br />
                   </p>
