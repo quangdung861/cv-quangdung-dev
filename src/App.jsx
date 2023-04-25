@@ -653,10 +653,6 @@ function App() {
                     Server, Json Server Auth..
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in Json
-                    Server, Json Server Auth.
-                  </li>
-                  <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in
                     RESTful API.
                   </li>
