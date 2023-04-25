@@ -497,7 +497,38 @@ function App() {
                 </div>
               </div>
 
-              <div className="resume-date"></div>
+              <p
+                className="resume-content-subname lead"
+                style={{ marginTop: "20px" }}
+              >
+                OTHER PROJECTS
+              </p>
+              <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
+                <li>
+                  <i class="fa-solid fa-check"></i> &nbsp; Play tailwind css
+                  <br />
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/play-tailwind-css"
+                  >
+                    - Source code:
+                    https://github.com/quangdung861/play-tailwind-css
+                  </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> &nbsp; Vehicle rental
+                  website
+                  <br />
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/vehicle-rental-website.git"
+                  >
+                    - Source code:
+                    https://github.com/quangdung861/vehicle-rental-website.git
+                  </a>
+                </li>
+                <li>&nbsp; &nbsp; &nbsp; ...</li>
+              </ul>
             </div>
           </div>
         </div>
