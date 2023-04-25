@@ -496,16 +496,19 @@ function App() {
                   <span>Jun 2022 - Present</span>
                 </div>
               </div>
-
               <p
                 className="resume-content-subname lead"
                 style={{ marginTop: "20px" }}
               >
                 OTHER PROJECTS
               </p>
-              <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
+              <ul style={{ listStyle: "none", paddingLeft: 0 }}>
                 <li>
-                  <i class="fa-solid fa-check"></i> &nbsp; Play tailwind css
+                  <i
+                    class="fa-solid fa-bookmark"
+                    style={{ color: "#ffc107" }}
+                  ></i>
+                  &nbsp; Play tailwind css
                   <br />
                   <a
                     className="custome-tag-link"
@@ -516,8 +519,11 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <i class="fa-solid fa-check"></i> &nbsp; Vehicle rental
-                  website
+                  <i
+                    class="fa-solid fa-bookmark"
+                    style={{ color: "#ffc107" }}
+                  ></i>
+                  &nbsp; Vehicle rental website
                   <br />
                   <a
                     className="custome-tag-link"
