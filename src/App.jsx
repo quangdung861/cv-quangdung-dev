@@ -493,7 +493,7 @@ function App() {
                   </p>
                 </div>
                 <div className="resume-date">
-                  <span>Jun 2022 - Dec 2022</span>
+                  <span>Jun 2022 - Present</span>
                 </div>
               </div>
 
