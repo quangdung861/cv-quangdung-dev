@@ -434,7 +434,21 @@ function App() {
 
               <div className="resume-content content-flex">
                 <div>
-                  <h3 className="resume-content-name">DE VINC</h3>
+                  <h3
+                    className="resume-content-name"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    DE VINC
+                    <i
+                      class="fa-sharp fa-solid fa-star"
+                      style={{
+                        color: "#ffc107",
+                        marginLeft: "8px",
+                        paddingBottom: "3px",
+                        fontSize: "24px",
+                      }}
+                    ></i>
+                  </h3>
                   <p className="resume-content-subname">
                     FRONT-END WEB DEVELOPER
                   </p>
