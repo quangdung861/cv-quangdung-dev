@@ -216,6 +216,67 @@ function App() {
             <div className="resume-item">
               <div className="resume-content content-flex">
                 <div>
+                  <h3 className="resume-content-name">F8 FULLSTACK.EDU.VN</h3>
+                  <p className="resume-content-subname">
+                    FRONT-END WEB DEVELOPER
+                  </p>
+                  <p className="content-item lead">
+                    <i class="fa-solid fa-bookmark"></i> This is a website that
+                    sells courses.
+                  </p>
+                  <p className="content-item">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span className="lead"> My responsibilities: </span> <br />
+                    • Design UI <br />
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      - Gained experience and skills on:
+                    </span>
+                    <br />
+                    • Experience in using reactJS. <br />
+                    • Experience in using fontawesome.
+                    <br />
+                    • Experience in using react-slick, slick-carousel.
+                    <br />
+                    • Design sass, styled components.
+                    <br />
+                    • Experience using animation.
+                    <br />
+                    • Experience in using redux toolkit, saga, axios.
+                    <br />
+                    • Experience in Responsive design.
+                    <br />
+                  </p>
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/clone-f8-website.git"
+                    target="_blank"
+                  >
+                    - Source code:
+                    https://github.com/quangdung861/clone-f8-website.git
+                  </a>
+                  <br />
+                  <a
+                    className="custome-tag-link"
+                    href="https://clone-f8-website.vercel.app"
+                    target="_blank"
+                  >
+                    - Project deployment: https://clone-f8-website.vercel.app
+                  </a>
+                </div>
+                <div className="resume-date">
+                  <span>May 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
                   <h3 className="resume-content-name">CV PROFILE ONLINE</h3>
                   <p className="resume-content-subname">
                     FRONT-END WEB DEVELOPER
@@ -252,6 +313,7 @@ function App() {
                   <a
                     className="custome-tag-link"
                     href="https://github.com/quangdung861/cv-quangdung-dev.git"
+                    target="_blank"
                   >
                     - Source code:
                     https://github.com/quangdung861/cv-quangdung-dev.git
@@ -260,6 +322,7 @@ function App() {
                   <a
                     className="custome-tag-link"
                     href="https://quangdung861.github.io/cv-quangdung-dev/"
+                    target="_blank"
                   >
                     - Project deployment:
                     https://quangdung861.github.io/cv-quangdung-dev
@@ -347,6 +410,7 @@ function App() {
                     <a
                       className="custome-tag-link"
                       href="https://github.com/quangdung861/trello-quangdungdev-web.git"
+                      target="_blank"
                     >
                       - Source code:
                       https://github.com/quangdung861/trello-quangdungdev-web.git
@@ -355,6 +419,7 @@ function App() {
                     <a
                       className="custome-tag-link"
                       href="https://quangdung861.github.io/trello-quangdungdev-web/"
+                      target="_blank"
                     >
                       - Project deployment:
                       https://quangdung861.github.io/trello-quangdungdev-web
@@ -485,6 +550,7 @@ function App() {
                     <a
                       className="custome-tag-link"
                       href="https://github.com/quangdung861/project-devinc-website"
+                      target="_blank"
                     >
                       - Source code:
                       https://github.com/quangdung861/project-devinc-website
@@ -513,6 +579,7 @@ function App() {
                   <a
                     className="custome-tag-link"
                     href="https://github.com/quangdung861/play-tailwind-css"
+                    target="_blank"
                   >
                     - Source code:
                     https://github.com/quangdung861/play-tailwind-css
@@ -528,6 +595,7 @@ function App() {
                   <a
                     className="custome-tag-link"
                     href="https://github.com/quangdung861/vehicle-rental-website.git"
+                    target="_blank"
                   >
                     - Source code:
                     https://github.com/quangdung861/vehicle-rental-website.git
