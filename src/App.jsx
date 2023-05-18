@@ -259,14 +259,14 @@ function App() {
                     - Source code:
                     https://github.com/quangdung861/clone-f8-website.git
                   </a>
-                  <br />
+                  {/* <br />
                   <a
                     className="custome-tag-link"
                     href="https://clone-f8-website.vercel.app"
                     target="_blank"
                   >
                     - Project deployment: https://clone-f8-website.vercel.app
-                  </a>
+                  </a> */}
                 </div>
                 <div className="resume-date">
                   <span>May 2023</span>
@@ -318,7 +318,7 @@ function App() {
                     - Source code:
                     https://github.com/quangdung861/cv-quangdung-dev.git
                   </a>
-                  <br />
+                  {/* <br />
                   <a
                     className="custome-tag-link"
                     href="https://quangdung861.github.io/cv-quangdung-dev/"
@@ -326,7 +326,7 @@ function App() {
                   >
                     - Project deployment:
                     https://quangdung861.github.io/cv-quangdung-dev
-                  </a>
+                  </a> */}
                 </div>
                 <div className="resume-date">
                   <span>Apr 2023</span>
@@ -415,7 +415,7 @@ function App() {
                       - Source code:
                       https://github.com/quangdung861/trello-quangdungdev-web.git
                     </a>
-                    <br />
+                    {/* <br />
                     <a
                       className="custome-tag-link"
                       href="https://quangdung861.github.io/trello-quangdungdev-web/"
@@ -423,8 +423,7 @@ function App() {
                     >
                       - Project deployment:
                       https://quangdung861.github.io/trello-quangdungdev-web
-                    </a>
-                    <br />
+                    </a> */}
                   </p>
                 </div>
                 <div className="resume-date">
