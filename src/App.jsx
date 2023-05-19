@@ -231,7 +231,7 @@ function App() {
                     • Register account <br />
                     • Login, logout <br />
                     • Courses, posts, videos filter <br />
-                    • Json server, json server auth, JWT <br />
+                    • Json server, json server auth, json web token <br />
                     • Redux toolkit, redux saga <br />
                     • Axios, fetch <br />
                     • Styled component, sass <br />• Change avatar, cover
