@@ -228,6 +228,14 @@ function App() {
                     <i class="fa-solid fa-bookmark"></i>
                     <span className="lead"> My responsibilities: </span> <br />
                     • Design UI <br />
+                    • Register account <br />
+                    • Login, logout <br />
+                    • Courses, posts, videos filter <br />
+                    • Json server, json server auth, JWT <br />
+                    • Redux toolkit, redux saga <br />
+                    • Axios, fetch <br />
+                    • Styled component, sass <br />• Change avatar, cover
+                    convert to base64 and vice verca <br />
                     <span
                       style={{
                         color: "#079992",
@@ -239,6 +247,8 @@ function App() {
                     <br />
                     • Experience in using reactJS. <br />
                     • Experience in using fontawesome.
+                    <br />
+                    • Experience in convert base64.
                     <br />
                     • Experience in using react-slick, slick-carousel.
                     <br />
