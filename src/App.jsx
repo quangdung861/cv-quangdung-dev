@@ -216,6 +216,81 @@ function App() {
             <div className="resume-item">
               <div className="resume-content content-flex">
                 <div>
+                  <h3 className="resume-content-name">ZALO APP REALTIME</h3>
+                  <p className="resume-content-subname">
+                    FRONT-END WEB DEVELOPER
+                  </p>
+                  <p className="content-item lead">
+                    <i class="fa-solid fa-bookmark"></i> This is an online chat
+                    site
+                  </p>
+                  <p className="content-item">
+                    <i class="fa-solid fa-bookmark"></i>{" "}
+                    <span className="lead">Description:</span> This is a website
+                    for people to connect as long as you have a Google account,
+                    Github you can login in seconds without spending time on
+                    complicated authentication steps, the reason is I use
+                    Fisebase and it did that for me, in the app you can send
+                    friend requests to the people you want and other people can
+                    also find you, and from there people connect and chat with
+                    each other in real time, now I'm still developing more
+                    functions.
+                  </p>
+                  <p className="content-item">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span className="lead"> My responsibilities: </span> <br />
+                    • Design UI <br />• Register, login, logout account Google,
+                    Github, Email <br />
+                    with Authentication in Firebase <br />
+                    • Realtime Invitation Sent, Receive, Recall <br />
+                    • Realtime Approve, reject friend request <br />
+                    • Chat realtime with Cloud Firestore in Firebase <br />
+                    • View user infomation <br />
+                    • React-slick, react-carousel <br />
+                    • Emoji-mart <br />
+                    • MomentJS <br />
+                    • React router dom <br />
+                    • Styled components, Sass <br />
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      - Gained experience and skills on:
+                    </span>
+                    <br />
+                    • Experience using Firsebase SDK V9 <br />
+                    • Experience using Cloud Frisestore, Authentication <br />
+                    • Have experience with hierarchical database <br />
+                    • Experience using Emoji-mart, audio <br />
+                    • Experience in Responsive design <br />
+                    • Experience in git, github <br />
+                  </p>
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/zalo-app.git"
+                    target="_blank"
+                  >
+                    - Source code: https://github.com/quangdung861/zalo-app.git
+                  </a>
+                  {/* <br />
+                  <a
+                    className="custome-tag-link"
+                    href="https://clone-f8-website.vercel.app"
+                    target="_blank"
+                  >
+                    - Project deployment: https://clone-f8-website.vercel.app
+                  </a> */}
+                </div>
+                <div className="resume-date">
+                  <span>May 2023</span>
+                </div>
+              </div>
+            </div>
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
                   <h3 className="resume-content-name">F8 FULLSTACK.EDU.VN</h3>
                   <p className="resume-content-subname">
                     FRONT-END WEB DEVELOPER
@@ -245,20 +320,20 @@ function App() {
                       - Gained experience and skills on:
                     </span>
                     <br />
-                    • Experience in using reactJS. <br />
-                    • Experience in using fontawesome.
+                    • Experience in using reactJS <br />
+                    • Experience in using fontawesome
                     <br />
-                    • Experience in convert base64.
+                    • Experience in convert base64
                     <br />
-                    • Experience in using react-slick, slick-carousel.
+                    • Experience in using react-slick, slick-carousel
                     <br />
-                    • Design sass, styled components.
+                    • Design sass, styled components
                     <br />
-                    • Experience using animation.
+                    • Experience using animation
                     <br />
-                    • Experience in using redux toolkit, saga, axios.
+                    • Experience in using redux toolkit, saga, axios
                     <br />
-                    • Experience in Responsive design.
+                    • Experience in Responsive design
                     <br />
                   </p>
                   <a
@@ -308,16 +383,16 @@ function App() {
                       - Gained experience and skills on:
                     </span>
                     <br />
-                    • Experience in using viteJS. <br />
-                    • Experience in using fontawesome.
+                    • Experience in using viteJS <br />
+                    • Experience in using fontawesome
                     <br />
-                    • Design UI with BootstrapV5.2, Sass.
+                    • Design UI with BootstrapV5.2, Sass
                     <br />
-                    • Experience handle event scroll, image.
+                    • Experience handle event scroll, image
                     <br />
-                    • Experience in using deploy project in github.
+                    • Experience in using deploy project in github
                     <br />
-                    • Experience in Responsive design.
+                    • Experience in Responsive design
                     <br />
                   </p>
                   <a
@@ -783,6 +858,10 @@ function App() {
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in
                     RESTful API.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
+                    Firebase SDK V9, Firestore Cloud, Authentication.
                   </li>
                   <li>&nbsp; &nbsp; &nbsp; ...</li>
                 </ul>
