@@ -929,8 +929,9 @@ function App() {
                   look at some of my pictures:
                 </p>
                 <div className="interest-picture">
-                  {interestImages.map((item) => (
+                  {interestImages.map((item, index) => (
                     <img
+                      key={index}
                       src={item}
                       alt=""
                       className="img-zoomable"
