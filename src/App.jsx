@@ -245,7 +245,14 @@ function App() {
                     • Realtime Invitation Sent, Receive, Recall <br />
                     • Realtime Approve, reject friend request <br />
                     • Chat realtime with Cloud Firestore in Firebase <br />
-                    • View user infomation <br />
+                    • View, edit user infomation <br />
+                    • User classification <br />
+                    • Create group chat <br />
+                    • Create My Cloud as a place to store personal data <br />
+                    • Filter by category, keywords, descending & ascending{" "}
+                    <br />
+                    • Show latest and unseen messages <br />
+                    • See if the user is online <br />
                     • React-slick, react-carousel <br />
                     • Emoji-mart <br />
                     • MomentJS <br />
