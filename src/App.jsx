@@ -824,7 +824,7 @@ function App() {
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    ReactJS.
+                    ReactJS, VueJS.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
@@ -832,11 +832,11 @@ function App() {
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    React Router.
+                    React Router, Vue Router.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Redux-Toolkit.
+                    Redux-Toolkit, Vuex.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
