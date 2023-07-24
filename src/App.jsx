@@ -836,15 +836,15 @@ function App() {
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Redux-Toolkit, Vuex.
+                    Redux, Redux-Toolkit, Vuex.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
                     Redux-Hook.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Redux-Saga.
+                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using 
+                    Redux-thunk, Redux-Saga.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
@@ -856,15 +856,15 @@ function App() {
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in
-                    Bootstrap.
+                    Bootstrap, Tailwind CSS.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in Json
-                    Server, Json Server Auth..
+                    Server, Json Server Auth, MirageJS.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in
-                    RESTful API.
+                    RESTful API, fetch, axios.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in
