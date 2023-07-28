@@ -824,7 +824,7 @@ function App() {
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    ReactJS, VueJS.
+                    ReactJS, VueJS, jQuery.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
