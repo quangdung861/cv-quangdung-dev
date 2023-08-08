@@ -139,7 +139,7 @@ function App() {
                 textTransform: "uppercase",
               }}
             >
-              <i class="fa-solid fa-address-card"></i> · front-end web developer
+              <i class="fa-solid fa-address-card"></i> · fullstack web developer
             </div>
             <div
               style={{
