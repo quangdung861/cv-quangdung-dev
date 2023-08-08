@@ -1,15 +1,15 @@
-import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.scss";
+import { useState, useEffect } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.scss';
 
-import avatar from "./assets/images/avatar.jpg";
-import interest1 from "./assets/images/interest/interest1.jpg";
-import interest2 from "./assets/images/interest/interest2.jpg";
-import interest3 from "./assets/images/interest/interest3.jpg";
-import interest4 from "./assets/images/interest/interest4.jpg";
-import interest6 from "./assets/images/interest/interest6.jpg";
-import interest7 from "./assets/images/interest/interest7.jpg";
+import avatar from './assets/images/avatar.jpg';
+import interest1 from './assets/images/interest/interest1.jpg';
+import interest2 from './assets/images/interest/interest2.jpg';
+import interest3 from './assets/images/interest/interest3.jpg';
+import interest4 from './assets/images/interest/interest4.jpg';
+import interest6 from './assets/images/interest/interest6.jpg';
+import interest7 from './assets/images/interest/interest7.jpg';
 
 function App() {
   const [openModalArea, setOpenModalArea] = useState();
@@ -28,7 +28,7 @@ function App() {
   ];
 
   useEffect(() => {
-    document.addEventListener("scroll", () => {
+    document.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         setShowBtnUpToTop(true);
       } else {
@@ -40,77 +40,77 @@ function App() {
   const handleUpToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const handleModalArea = (item) => {
-    document.getElementById("div-zoom-area").style.display = "block";
+    document.getElementById('div-zoom-area').style.display = 'block';
     setOpenModalArea(item);
   };
 
   const handleCloseModalArea = () => {
-    document.getElementById("div-zoom-area").style.display = "none";
+    document.getElementById('div-zoom-area').style.display = 'none';
     setOpenModalArea();
   };
 
   return (
-    <div className="App">
-      <div className="appbar-collapse">
-        <div className="logo-brand">
-          <img className="img-avatar" src={avatar} alt="" />
+    <div className='App'>
+      <div className='appbar-collapse'>
+        <div className='logo-brand'>
+          <img className='img-avatar' src={avatar} alt='' />
         </div>
         <i
-          class="fa-solid fa-bars btn-hamburger"
+          class='fa-solid fa-bars btn-hamburger'
           onClick={() => setShowNavListMobile(!showNavListMobile)}
         ></i>
       </div>
 
       <div
-        className={showNavListMobile ? "sidebar-left active" : "sidebar-left"}
+        className={showNavListMobile ? 'sidebar-left active' : 'sidebar-left'}
       >
-        <span className="avatar">
-          <img className="img-avatar" src={avatar} alt="" />
+        <span className='avatar'>
+          <img className='img-avatar' src={avatar} alt='' />
         </span>
-        <div id="list-resume-section" className="sidebar-list list-group">
+        <div id='list-resume-section' className='sidebar-list list-group'>
           <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-1"
+            className='sidebar-item list-group-item list-group-item-action'
+            href='#list-item-1'
             onClick={() => setShowNavListMobile(false)}
           >
             ABOUT
           </a>
           <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-2"
+            className='sidebar-item list-group-item list-group-item-action'
+            href='#list-item-2'
             onClick={() => setShowNavListMobile(false)}
           >
             PROJECTS
           </a>
           <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-3"
+            className='sidebar-item list-group-item list-group-item-action'
+            href='#list-item-3'
             onClick={() => setShowNavListMobile(false)}
           >
             EDUCATION
           </a>
           <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-4"
+            className='sidebar-item list-group-item list-group-item-action'
+            href='#list-item-4'
             onClick={() => setShowNavListMobile(false)}
           >
             SKILLS
           </a>
           <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-5"
+            className='sidebar-item list-group-item list-group-item-action'
+            href='#list-item-5'
             onClick={() => setShowNavListMobile(false)}
           >
             INTERESTS
           </a>
           <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-6"
+            className='sidebar-item list-group-item list-group-item-action'
+            href='#list-item-6'
             onClick={() => setShowNavListMobile(false)}
           >
             THE END
@@ -118,115 +118,115 @@ function App() {
         </div>
       </div>
       <div
-        data-bs-spy="scroll"
-        data-bs-target="list-resume-section"
-        data-bs-smooth-scroll="true"
-        tabindex="0"
-        className="container-section"
+        data-bs-spy='scroll'
+        data-bs-target='list-resume-section'
+        data-bs-smooth-scroll='true'
+        tabindex='0'
+        className='container-section'
       >
-        <div id="list-item-1" className="resume-section">
-          <div className="resume-section-detail">
+        <div id='list-item-1' className='resume-section'>
+          <div className='resume-section-detail'>
             <h1>
               PHAN QUANG
               <span> DŨNG</span>
             </h1>
             <div
               style={{
-                fontSize: "24px",
+                fontSize: '24px',
                 fontFamily: "'Saira Extra Condensed', sans-serif",
                 fontWeight: 500,
-                color: "#34495e",
-                textTransform: "uppercase",
+                color: '#34495e',
+                textTransform: 'uppercase',
               }}
             >
-              <i class="fa-solid fa-address-card"></i> · fullstack web developer
+              <i class='fa-solid fa-address-card'></i> · fullstack web developer
             </div>
             <div
               style={{
-                fontSize: "24px",
+                fontSize: '24px',
                 fontFamily: "'Saira Extra Condensed', sans-serif",
                 fontWeight: 500,
-                color: "#34495e",
-                textTransform: "uppercase",
-                marginBottom: "24px",
+                color: '#34495e',
+                textTransform: 'uppercase',
+                marginBottom: '24px',
               }}
             >
-              <i class="fa-solid fa-map"></i> · K82/25 nguyen luong bang street,
+              <i class='fa-solid fa-map'></i> · K82/25 nguyen luong bang street,
               lien chieu district, da nang city · <br />
-              <span style={{ color: "#079992" }}>quangdung861@gmail.com</span>
+              <span style={{ color: '#079992' }}>quangdung861@gmail.com</span>
             </div>
-            <p style={{ fontSize: "1.2rem", lineHeight: "2rem" }}>
+            <p style={{ fontSize: '1.2rem', lineHeight: '2rem' }}>
               Welcome to visit my CV online!
             </p>
             <p
               style={{
-                marginBottom: "24px",
-                fontSize: "1.1rem",
-                fontStyle: "italic",
+                marginBottom: '24px',
+                fontSize: '1.1rem',
+                fontStyle: 'italic',
               }}
             >
               "A little bit of fragrance always clings to the hands that gives
               flowers!"
             </p>
-            <p style={{ marginBottom: "50px" }}>
-              <span className="lead">
-                <i class="fa-brands fa-react"></i> Front-End:
-              </span>{" "}
-              I am experienced in{" "}
-              <span className="lead">
+            <p style={{ marginBottom: '50px' }}>
+              <span className='lead'>
+                <i class='fa-brands fa-react'></i> Front-End:
+              </span>{' '}
+              I am experienced in{' '}
+              <span className='lead'>
                 Javascript on ReactJS FrameWork, using Redux, Axios,
                 Bootstrap...
               </span>
               etc
             </p>
             <a
-              className="box-icon-social"
-              href="https://github.com/quangdung861"
-              target="_blank"
+              className='box-icon-social'
+              href='https://github.com/quangdung861'
+              target='_blank'
             >
-              <i class="fa-brands fa-github icon-social"></i>
+              <i class='fa-brands fa-github icon-social'></i>
             </a>
             <a
-              className="box-icon-social"
-              target="_blank"
-              href="https://www.facebook.com/dungquangphandev"
+              className='box-icon-social'
+              target='_blank'
+              href='https://www.facebook.com/dungquangphandev'
             >
-              <i class="fa-brands fa-facebook icon-social"></i>
+              <i class='fa-brands fa-facebook icon-social'></i>
             </a>
             <a
-              className="box-icon-social"
-              href="https://www.linkedin.com/in/phan-quang-dung-898476259/"
-              target="_blank"
+              className='box-icon-social'
+              href='https://www.linkedin.com/in/phan-quang-dung-898476259/'
+              target='_blank'
             >
-              <i class="fa-brands fa-linkedin icon-social"></i>
+              <i class='fa-brands fa-linkedin icon-social'></i>
             </a>
             <a
-              className="box-icon-social"
-              href="https://www.facebook.com/messages/t/100003857673185/"
-              target="_blank"
+              className='box-icon-social'
+              href='https://www.facebook.com/messages/t/100003857673185/'
+              target='_blank'
             >
-              <i class="fa-brands fa-facebook-messenger icon-social"></i>
+              <i class='fa-brands fa-facebook-messenger icon-social'></i>
             </a>
           </div>
         </div>
-        <hr className="division-line" />
-        <div id="list-item-2" className="resume-section">
-          <div className="resume-section-detail">
-            <h2 className="title">PROJECTS</h2>
-            <div className="resume-item">
-              <div className="resume-content content-flex">
+        <hr className='division-line' />
+        <div id='list-item-2' className='resume-section'>
+          <div className='resume-section-detail'>
+            <h2 className='title'>PROJECTS</h2>
+            <div className='resume-item'>
+              <div className='resume-content content-flex'>
                 <div>
-                  <h3 className="resume-content-name">ZALO APP REALTIME</h3>
-                  <p className="resume-content-subname">
+                  <h3 className='resume-content-name'>ZALO APP REALTIME</h3>
+                  <p className='resume-content-subname'>
                     FRONT-END WEB DEVELOPER
                   </p>
-                  <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> This is an online chat
+                  <p className='content-item lead'>
+                    <i class='fa-solid fa-bookmark'></i> This is an online chat
                     site
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>{" "}
-                    <span className="lead">Description:</span> This is a website
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>{' '}
+                    <span className='lead'>Description:</span> This is a website
                     for people to connect as long as you have a Google account,
                     Github you can login in seconds without spending time on
                     complicated authentication steps, the reason is I use
@@ -236,9 +236,9 @@ function App() {
                     each other in real time, now I'm still developing more
                     functions.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> My responsibilities: </span> <br />
                     • Design UI <br />• Register, login, logout account Google,
                     Github, Email <br />
                     with Authentication in Firebase <br />
@@ -248,9 +248,8 @@ function App() {
                     • View, edit user infomation <br />
                     • User classification <br />
                     • Create group chat <br />
-                    • Create My Cloud as a place to store personal data <br />
-                    • Filter by category, keywords, descending & ascending{" "}
-                    <br />
+                    • Create My Cloud as a place to store personal data <br />•
+                    Filter by category, keywords, descending & ascending <br />
                     • Show latest and unseen messages <br />
                     • See if the user is online <br />
                     • React-slick, react-carousel <br />
@@ -260,8 +259,8 @@ function App() {
                     • Styled components, Sass <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Gained experience and skills on:
@@ -275,40 +274,40 @@ function App() {
                     • Experience in git, github <br />
                   </p>
                   <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/zalo-app.git"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://github.com/quangdung861/zalo-app.git'
+                    target='_blank'
                   >
                     - Source code: https://github.com/quangdung861/zalo-app.git
                   </a>
                   <br />
                   <a
-                    className="custome-tag-link"
-                    href="https://zalo-app-mu.vercel.app"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://zalo-app-mu.vercel.app'
+                    target='_blank'
                   >
                     - Project deployment: https://zalo-app-mu.vercel.app
                   </a>
                 </div>
-                <div className="resume-date">
+                <div className='resume-date'>
                   <span>May 2023</span>
                 </div>
               </div>
             </div>
-            <div className="resume-item">
-              <div className="resume-content content-flex">
+            <div className='resume-item'>
+              <div className='resume-content content-flex'>
                 <div>
-                  <h3 className="resume-content-name">F8 FULLSTACK.EDU.VN</h3>
-                  <p className="resume-content-subname">
+                  <h3 className='resume-content-name'>F8 FULLSTACK.EDU.VN</h3>
+                  <p className='resume-content-subname'>
                     FRONT-END WEB DEVELOPER
                   </p>
-                  <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> This is a website that
+                  <p className='content-item lead'>
+                    <i class='fa-solid fa-bookmark'></i> This is a website that
                     sells courses.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> My responsibilities: </span> <br />
                     • Design UI <br />
                     • Register account <br />
                     • Login, logout <br />
@@ -320,8 +319,8 @@ function App() {
                     convert to base64 and vice verca <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Gained experience and skills on:
@@ -344,47 +343,47 @@ function App() {
                     <br />
                   </p>
                   <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/clone-f8-website.git"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://github.com/quangdung861/clone-f8-website.git'
+                    target='_blank'
                   >
                     - Source code:
                     https://github.com/quangdung861/clone-f8-website.git
                   </a>
                   <br />
                   <a
-                    className="custome-tag-link"
-                    href="https://clone-f8-website.vercel.app"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://clone-f8-website.vercel.app'
+                    target='_blank'
                   >
                     - Project deployment: https://clone-f8-website.vercel.app
                   </a>
                 </div>
-                <div className="resume-date">
+                <div className='resume-date'>
                   <span>May 2023</span>
                 </div>
               </div>
             </div>
 
-            <div className="resume-item">
-              <div className="resume-content content-flex">
+            <div className='resume-item'>
+              <div className='resume-content content-flex'>
                 <div>
-                  <h3 className="resume-content-name">CV PROFILE ONLINE</h3>
-                  <p className="resume-content-subname">
+                  <h3 className='resume-content-name'>CV PROFILE ONLINE</h3>
+                  <p className='resume-content-subname'>
                     FRONT-END WEB DEVELOPER
                   </p>
-                  <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> This is where I
+                  <p className='content-item lead'>
+                    <i class='fa-solid fa-bookmark'></i> This is where I
                     describe myself.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> My responsibilities: </span> <br />
                     • Design UI <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Gained experience and skills on:
@@ -403,41 +402,41 @@ function App() {
                     <br />
                   </p>
                   <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/cv-quangdung-dev.git"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://github.com/quangdung861/cv-quangdung-dev.git'
+                    target='_blank'
                   >
                     - Source code:
                     https://github.com/quangdung861/cv-quangdung-dev.git
                   </a>
                   <br />
                   <a
-                    className="custome-tag-link"
-                    href="https://quangdung861.github.io/cv-quangdung-dev"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://quangdung861.github.io/cv-quangdung-dev'
+                    target='_blank'
                   >
                     - Project deployment:
                     https://quangdung861.github.io/cv-quangdung-dev
                   </a>
                 </div>
-                <div className="resume-date">
+                <div className='resume-date'>
                   <span>Apr 2023</span>
                 </div>
               </div>
 
-              <div className="resume-content content-flex">
+              <div className='resume-content content-flex'>
                 <div>
-                  <h3 className="resume-content-name">TRELLO</h3>
-                  <p className="resume-content-subname">
+                  <h3 className='resume-content-name'>TRELLO</h3>
+                  <p className='resume-content-subname'>
                     FRONT-END WEB DEVELOPER
                   </p>
-                  <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> Trello is a list maker
+                  <p className='content-item lead'>
+                    <i class='fa-solid fa-bookmark'></i> Trello is a list maker
                     app.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>{" "}
-                    <span className="lead">Description:</span> Trello is a
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>{' '}
+                    <span className='lead'>Description:</span> Trello is a
                     flexible task management tool where teams can plan,
                     collaborate on projects, organize workflow, and track
                     progress in an intuitive, efficient, and rewarding way. From
@@ -447,28 +446,28 @@ function App() {
                     elements like columns and cards, arranging them according to
                     the desired progress.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Programming language: </span>
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> Programming language: </span>
                     HTML, SASS, JavaScript.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Technologies used: </span>
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> Technologies used: </span>
                     ReactJS, React bootstrap, React smooth dnd, React icons.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Code editor: </span>
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> Code editor: </span>
                     Visual Studio Code.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> My responsibilities: </span> <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Customer:
@@ -482,8 +481,8 @@ function App() {
                     • Creating shared variables <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Gained experience and skills on:
@@ -500,56 +499,56 @@ function App() {
                     • Experience in using jsconfig.json. <br />
                     • Experience in Responsive design <br />
                     <a
-                      className="custome-tag-link"
-                      href="https://github.com/quangdung861/trello-quangdungdev-web.git"
-                      target="_blank"
+                      className='custome-tag-link'
+                      href='https://github.com/quangdung861/trello-quangdungdev-web.git'
+                      target='_blank'
                     >
                       - Source code:
                       https://github.com/quangdung861/trello-quangdungdev-web.git
                     </a>
                     <br />
                     <a
-                      className="custome-tag-link"
-                      href="https://quangdung861.github.io/trello-quangdungdev-web"
-                      target="_blank"
+                      className='custome-tag-link'
+                      href='https://quangdung861.github.io/trello-quangdungdev-web'
+                      target='_blank'
                     >
                       - Project deployment:
                       https://quangdung861.github.io/trello-quangdungdev-web
                     </a>
                   </p>
                 </div>
-                <div className="resume-date">
+                <div className='resume-date'>
                   <span>Jan 2023 - Apr 2023</span>
                 </div>
               </div>
 
-              <div className="resume-content content-flex">
+              <div className='resume-content content-flex'>
                 <div>
                   <h3
-                    className="resume-content-name"
-                    style={{ display: "flex", alignItems: "center" }}
+                    className='resume-content-name'
+                    style={{ display: 'flex', alignItems: 'center' }}
                   >
                     DE VINC
                     <i
-                      class="fa-sharp fa-solid fa-star"
+                      class='fa-sharp fa-solid fa-star'
                       style={{
-                        color: "#ffc107",
-                        marginLeft: "8px",
-                        paddingBottom: "3px",
-                        fontSize: "24px",
+                        color: '#ffc107',
+                        marginLeft: '8px',
+                        paddingBottom: '3px',
+                        fontSize: '24px',
                       }}
                     ></i>
                   </h3>
-                  <p className="resume-content-subname">
+                  <p className='resume-content-subname'>
                     FRONT-END WEB DEVELOPER
                   </p>
-                  <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> Online clothing
+                  <p className='content-item lead'>
+                    <i class='fa-solid fa-bookmark'></i> Online clothing
                     ordering system.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>{" "}
-                    <span className="lead">Description:</span> An online
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>{' '}
+                    <span className='lead'>Description:</span> An online
                     clothing ordering system is a website that provides
                     customers with a means of ordering clothes online and
                     aggregating information about news, products, and discounts.
@@ -573,34 +572,34 @@ function App() {
                     list of users. Make sure to decentralize the scope of access
                     between users and administrators.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Programming language: </span>
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> Programming language: </span>
                     HTML, CSS, JavaScript.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Technologies used: </span>
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> Technologies used: </span>
                     ReactJS, Ant Design, React-Hook, React Router,
                     Redux-Toolkit, Redux-Hook, Redux-Saga, Styled-Components.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Code editor: </span>
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> Code editor: </span>
                     Visual Studio Code.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Database: </span>
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> Database: </span>
                     JSON Server.
                   </p>
-                  <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
+                  <p className='content-item'>
+                    <i class='fa-solid fa-bookmark'></i>
+                    <span className='lead'> My responsibilities: </span> <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Customer:
@@ -623,8 +622,8 @@ function App() {
                     shipping address <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Administrators:
@@ -639,8 +638,8 @@ function App() {
                     • User manager <br />
                     <span
                       style={{
-                        color: "#079992",
-                        fontWeight: "bold",
+                        color: '#079992',
+                        fontWeight: 'bold',
                       }}
                     >
                       - Gained experience and skills on:
@@ -653,9 +652,9 @@ function App() {
                     • Experience in using ReactJS <br />
                     • Experience in Responsive design <br />
                     <a
-                      className="custome-tag-link"
-                      href="https://github.com/quangdung861/project-devinc-website"
-                      target="_blank"
+                      className='custome-tag-link'
+                      href='https://github.com/quangdung861/project-devinc-website'
+                      target='_blank'
                     >
                       - Source code:
                       https://github.com/quangdung861/project-devinc-website
@@ -663,28 +662,28 @@ function App() {
                     <br />
                   </p>
                 </div>
-                <div className="resume-date">
+                <div className='resume-date'>
                   <span>Jun 2022 - Present</span>
                 </div>
               </div>
               <p
-                className="resume-content-subname lead"
-                style={{ marginTop: "20px" }}
+                className='resume-content-subname lead'
+                style={{ marginTop: '20px' }}
               >
                 OTHER PROJECTS
               </p>
-              <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+              <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
                 <li>
                   <i
-                    class="fa-solid fa-bookmark"
-                    style={{ color: "#ffc107" }}
+                    class='fa-solid fa-bookmark'
+                    style={{ color: '#ffc107' }}
                   ></i>
                   &nbsp; Play tailwind css
                   <br />
                   <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/play-tailwind-css"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://github.com/quangdung861/play-tailwind-css'
+                    target='_blank'
                   >
                     - Source code:
                     https://github.com/quangdung861/play-tailwind-css
@@ -692,15 +691,15 @@ function App() {
                 </li>
                 <li>
                   <i
-                    class="fa-solid fa-bookmark"
-                    style={{ color: "#ffc107" }}
+                    class='fa-solid fa-bookmark'
+                    style={{ color: '#ffc107' }}
                   ></i>
                   &nbsp; Vehicle rental website
                   <br />
                   <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/vehicle-rental-website.git"
-                    target="_blank"
+                    className='custome-tag-link'
+                    href='https://github.com/quangdung861/vehicle-rental-website.git'
+                    target='_blank'
                   >
                     - Source code:
                     https://github.com/quangdung861/vehicle-rental-website.git
@@ -711,202 +710,206 @@ function App() {
             </div>
           </div>
         </div>
-        <hr className="division-line" />
-        <div id="list-item-3" className="resume-section">
-          <div className="resume-section-detail">
-            <h2 className="title">EDUCATION</h2>
-            <div className="resume-item">
-              <div className="resume-content content-flex">
+        <hr className='division-line' />
+        <div id='list-item-3' className='resume-section'>
+          <div className='resume-section-detail'>
+            <h2 className='title'>EDUCATION</h2>
+            <div className='resume-item'>
+              <div className='resume-content content-flex'>
                 <div>
-                  <h3 className="resume-content-name">
+                  <h3 className='resume-content-name'>
                     IVIETTECH PROGRAMING CENTER
                   </h3>
                   <p
-                    className="resume-content-subname"
-                    style={{ textTransform: "uppercase" }}
+                    className='resume-content-subname'
+                    style={{ textTransform: 'uppercase' }}
                   >
                     I studied and obtained the Certificate of Professional
                     Front-End Programming course.
                   </p>
-                  <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> Here I learn from basic
+                  <p className='content-item '>
+                    <i class='fa-solid fa-bookmark'></i> Here I learn from basic
                     to advanced how to write and apply new and practical
                     technologies in building websites with HTML, CSS, SASS,
                     Bootstrap, Javascript, ReactJS, Redux, NodeJS...
                   </p>
-                  <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> I really like my
+                  <p className='content-item '>
+                    <i class='fa-solid fa-bookmark'></i> I really like my
                     school, here I get to work with everyone.
                   </p>
-                  <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> After college, I
+                  <p className='content-item '>
+                    <i class='fa-solid fa-bookmark'></i> After college, I
                     succeeded with my graduation thesis on programming: ReactJS,
                     Redux, AntDesign... build a multi-functional e-commerce
                     website.
                   </p>
-                  <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> My graduate thesis was
+                  <p className='content-item '>
+                    <i class='fa-solid fa-bookmark'></i> My graduate thesis was
                     granted 9.5/10, reached the top 3rd highest score in the
                     whole class. I was very happy about that moment.
                   </p>
                 </div>
-                <div className="resume-date">
+                <div className='resume-date'>
                   <span>Jun 2022 - Dec 2022</span>
                 </div>
               </div>
-              <div className="resume-content content-flex">
+              <div className='resume-content content-flex'>
                 <div>
-                  <h3 className="resume-content-name">COLLEGE OF TECHNOLOGY</h3>
-                  <p className="resume-content-subname">
+                  <h3 className='resume-content-name'>COLLEGE OF TECHNOLOGY</h3>
+                  <p className='resume-content-subname'>
                     I GRADUATE COLLEGE IN INFORMATION TECHNOLOGY <br /> AND I
                     DEVELOP MY CAREER AS A DEVELOPER.
                   </p>
-                  <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> When I was a student, I
+                  <p className='content-item '>
+                    <i class='fa-solid fa-bookmark'></i> When I was a student, I
                     studied a lot about career development in information
                     technology and then I decided to choose web programming
                     because I particularly like customize and draw on my
                     websites.
                   </p>
-                  <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> I really enjoy my
+                  <p className='content-item '>
+                    <i class='fa-solid fa-bookmark'></i> I really enjoy my
                     school, where I make new friends and we study together.
                   </p>
-                  <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> After college, I
+                  <p className='content-item '>
+                    <i class='fa-solid fa-bookmark'></i> After college, I
                     succeeded with my graduation thesis on programming: PHP,
                     mySQL, building online ordering application.
                   </p>
                 </div>
-                <div className="resume-date">
+                <div className='resume-date'>
                   <span>Aug 2015 - Jan 2019</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <hr className="division-line" />
-        <div id="list-item-4" className="resume-section">
-          <div className="resume-section-detail">
-            <h2 className="title">SKILL</h2>
-            <div className="resume-item">
-              <div className="resume-content">
-                <h3 className="resume-content-name"></h3>
-                <p className="resume-content-subname">
+        <hr className='division-line' />
+        <div id='list-item-4' className='resume-section'>
+          <div className='resume-section-detail'>
+            <h2 className='title'>SKILL</h2>
+            <div className='resume-item'>
+              <div className='resume-content'>
+                <h3 className='resume-content-name'></h3>
+                <p className='resume-content-subname'>
                   PROGRAMMING LANGUAGES & TOOLS
                 </p>
-                <ul className="list-inline">
-                  <li className="list-inline-item">
-                    <i class="fa-brands fa-react react-icon"></i>
-                    <i class="fa-brands fa-js javascript-icon"></i>
-                    <i class="fa-brands fa-node-js nodejs-icon"></i>
-                    <i class="fa-brands fa-html5 html5-icon"></i>
-                    <i class="fa-brands fa-css3-alt css3-icon"></i>
-                    <i class="fa-brands fa-bootstrap bootstrap-icon"></i>
-                    <i class="fa-brands fa-npm npm-icon"></i>
-                    <i class="fa-brands fa-github github-icon"></i>
-                    <i class="fa-brands fa-git-alt git-icon"></i>
-                    <i class="fa-brands fa-trello trello-icon"></i>
-                    <i class="fa-brands fa-sass sass-icon"></i>
-                    <i class="fa-solid fa-font-awesome font-awesome-icon"></i>
-                    <i class="fa-brands fa-yarn yarn-icon"></i>
+                <ul className='list-inline'>
+                  <li className='list-inline-item'>
+                    <i class='fa-brands fa-react react-icon'></i>
+                    <i class='fa-brands fa-js javascript-icon'></i>
+                    <i class='fa-brands fa-node-js nodejs-icon'></i>
+                    <i class='fa-brands fa-html5 html5-icon'></i>
+                    <i class='fa-brands fa-css3-alt css3-icon'></i>
+                    <i class='fa-brands fa-bootstrap bootstrap-icon'></i>
+                    <i class='fa-brands fa-npm npm-icon'></i>
+                    <i class='fa-brands fa-github github-icon'></i>
+                    <i class='fa-brands fa-git-alt git-icon'></i>
+                    <i class='fa-brands fa-trello trello-icon'></i>
+                    <i class='fa-brands fa-sass sass-icon'></i>
+                    <i class='fa-solid fa-font-awesome font-awesome-icon'></i>
+                    <i class='fa-brands fa-yarn yarn-icon'></i>
                   </li>
                 </ul>
-                <p className="resume-content-subname">TECHNICAL</p>
-                <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
+                <p className='resume-content-subname'>TECHNICAL</p>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px' }}>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Proficient in Web
+                    <i class='fa-solid fa-check'></i> &nbsp; Proficient in Web
                     Development languages like HTML5, CSS3, Javascript.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Ant Design, MaterialUI.
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
+                    Bootstrap, Ant Design, MaterialUI, Tailwind CSS.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
                     ReactJS, VueJS, jQuery.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
                     React-Hook.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
                     React Router, Vue Router.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
                     Redux, Redux-Toolkit, Vuex.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
                     Redux-Hook.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using 
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
                     Redux-thunk, Redux-Saga.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Styled-Components..
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in using
+                    Sass, Styled-Components..
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in
                     Responsive Design.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
-                    Bootstrap, Tailwind CSS.
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in Json
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in Json
                     Server, Json Server Auth, MirageJS.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
-                    RESTful API, fetch, axios.
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in
+                    RESTful API, Fetch, Axios.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in
                     Firebase SDK V9, Firestore Cloud, Authentication.
+                  </li>
+                  <li>
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in
+                    NodeJS, ExpressJS.
+                  </li>
+                  <li>
+                    <i class='fa-solid fa-check'></i> &nbsp; Experience in
+                    MongoDB, Mongoose.
                   </li>
                   <li>&nbsp; &nbsp; &nbsp; ...</li>
                 </ul>
-                <p className="resume-content-subname">WORKFLOW</p>
-                <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
+                <p className='resume-content-subname'>WORKFLOW</p>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px' }}>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Git, Github for
+                    <i class='fa-solid fa-check'></i> &nbsp; Git, Github for
                     Teamwork
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Testing & Debugging
+                    <i class='fa-solid fa-check'></i> &nbsp; Testing & Debugging
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Trello, Google
+                    <i class='fa-solid fa-check'></i> &nbsp; Trello, Google
                     meet, Zoom
                   </li>
                   <li>&nbsp; &nbsp; &nbsp; ...</li>
                 </ul>
-                <p className="resume-content-subname">
+                <p className='resume-content-subname'>
                   LEARNING AND INTERESTED
                 </p>
-                <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px' }}>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Lodash
+                    <i class='fa-solid fa-check'></i> &nbsp; Lodash
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; NodeJs
+                    <i class='fa-solid fa-check'></i> &nbsp; NodeJs
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; TypeScript
+                    <i class='fa-solid fa-check'></i> &nbsp; TypeScript
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; FireBase
+                    <i class='fa-solid fa-check'></i> &nbsp; FireBase
                   </li>
                   <li>&nbsp; &nbsp; &nbsp; ...</li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp;
-                    <span style={{ fontStyle: "italic" }}>
+                    <i class='fa-solid fa-check'></i> &nbsp;
+                    <span style={{ fontStyle: 'italic' }}>
                       If you do not have an awesome brain, you have to
                       ceaselessly learn!
                     </span>
@@ -916,32 +919,32 @@ function App() {
             </div>
           </div>
         </div>
-        <hr className="division-line" />
-        <div id="list-item-5" className="resume-section">
-          <div className="resume-section-detail">
-            <h2 className="title">INTERESTS</h2>
-            <div className="resume-item">
-              <div className="resume-content">
-                <h3 className="resume-content-name"></h3>
-                <p className="resume-content-subname"></p>
-                <p style={{ marginBottom: "8px" }}>
+        <hr className='division-line' />
+        <div id='list-item-5' className='resume-section'>
+          <div className='resume-section-detail'>
+            <h2 className='title'>INTERESTS</h2>
+            <div className='resume-item'>
+              <div className='resume-content'>
+                <h3 className='resume-content-name'></h3>
+                <p className='resume-content-subname'></p>
+                <p style={{ marginBottom: '8px' }}>
                   Aside from being a developer, I enjoy most of my free time
                   enjoying fashion, reading peaceful books.
                 </p>
-                <p style={{ marginBottom: "8px" }}>
+                <p style={{ marginBottom: '8px' }}>
                   In addition, I like to go to the gym, walk, and swim.
                 </p>
-                <p style={{ marginBottom: "20px" }}>
+                <p style={{ marginBottom: '20px' }}>
                   Last but not least, I love to travel and take pictures. Take a
                   look at some of my pictures:
                 </p>
-                <div className="interest-picture">
+                <div className='interest-picture'>
                   {interestImages.map((item, index) => (
                     <img
                       key={index}
                       src={item}
-                      alt=""
-                      className="img-zoomable"
+                      alt=''
+                      className='img-zoomable'
                       onClick={() => handleModalArea(item)}
                     />
                   ))}
@@ -950,25 +953,25 @@ function App() {
             </div>
           </div>
         </div>
-        <div id="list-item-6" className="resume-section">
-          <div className="resume-section-detail">
-            <h2 className="title">THE END</h2>
-            <div className="resume-item">
-              <div className="resume-content">
-                <h3 className="resume-content-name"></h3>
-                <p className="resume-content-subname"></p>
-                <p style={{ marginBottom: "16px" }}>
+        <div id='list-item-6' className='resume-section'>
+          <div className='resume-section-detail'>
+            <h2 className='title'>THE END</h2>
+            <div className='resume-item'>
+              <div className='resume-content'>
+                <h3 className='resume-content-name'></h3>
+                <p className='resume-content-subname'></p>
+                <p style={{ marginBottom: '16px' }}>
                   Finally, I would like to say "Thank You" for spent time to
                   look at my CV profile.
                 </p>
-                <p style={{ fontStyle: "italic" }}>
+                <p style={{ fontStyle: 'italic' }}>
                   Wishing you all the best (◕‿↼)
                 </p>
                 <img
-                  src="https://media0.giphy.com/media/xBTSwCTFkgfcdTjHMz/giphy.gif?cid=ecf05e47jndkll2pabe98pkea2t1fljh67kdfpe2gmmvg5wo&rid=giphy.gif&ct=s"
-                  alt=""
+                  src='https://media0.giphy.com/media/xBTSwCTFkgfcdTjHMz/giphy.gif?cid=ecf05e47jndkll2pabe98pkea2t1fljh67kdfpe2gmmvg5wo&rid=giphy.gif&ct=s'
+                  alt=''
                   width={300}
-                  style={{ marginBottom: "80px" }}
+                  style={{ marginBottom: '80px' }}
                 />
               </div>
             </div>
@@ -976,13 +979,13 @@ function App() {
         </div>
       </div>
       {showBtnUpToTop && (
-        <div className="up-to-top" onClick={() => handleUpToTop()}>
-          <i class="bi bi-chevron-double-up up-to-top-icon"></i>
+        <div className='up-to-top' onClick={() => handleUpToTop()}>
+          <i class='bi bi-chevron-double-up up-to-top-icon'></i>
         </div>
       )}
 
-      <div id="div-zoom-area" onClick={() => handleCloseModalArea()}>
-        <img id="img-zoom-area-content" src={openModalArea} alt="" />
+      <div id='div-zoom-area' onClick={() => handleCloseModalArea()}>
+        <img id='img-zoom-area-content' src={openModalArea} alt='' />
       </div>
     </div>
   );
