@@ -682,11 +682,11 @@ function App() {
                   <br />
                   <a
                     className="custome-tag-link"
-                    href="https://github.com/quangdung861/play-tailwind-css"
+                    href="https://header-universe-animation.vercel.app"
                     target="_blank"
                   >
                     - Project deployment:
-                    https://header-universe-header.vercel.app/
+                    https://header-universe-animation.vercel.app/
                   </a>
                 </li>
                 <li>
