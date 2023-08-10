@@ -663,7 +663,7 @@ function App() {
                   </p>
                 </div>
                 <div className="resume-date">
-                  <span>Nov 2022 - Present</span>
+                  <span>Sep 2022 - Present</span>
                 </div>
               </div>
               <p
