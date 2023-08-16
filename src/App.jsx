@@ -151,7 +151,7 @@ function App() {
                 marginBottom: "24px",
               }}
             >
-              <i class="fa-solid fa-map"></i> · K82/25 nguyen luong bang street,
+              <i class="fa-solid fa-map"></i> · 82 nguyen luong bang street,
               lien chieu district, da nang city · <br />
               <span style={{ color: "#079992" }}>quangdung861@gmail.com</span>
             </div>
