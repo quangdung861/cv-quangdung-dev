@@ -660,6 +660,13 @@ function App() {
                       https://github.com/quangdung861/project-devinc-website
                     </a>
                     <br />
+                    <a
+                      className="custome-tag-link"
+                      href="https://devinc.vn"
+                      target="_blank"
+                    >
+                      - Project deployment: https://devinc.vn
+                    </a>
                   </p>
                 </div>
                 <div className="resume-date">
@@ -839,7 +846,7 @@ function App() {
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
-                    ReactJS, VueJS, jQuery.
+                    ReactJS, VueJS.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
