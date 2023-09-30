@@ -216,7 +216,21 @@ function App() {
             <div className="resume-item">
               <div className="resume-content content-flex">
                 <div>
-                  <h3 className="resume-content-name">ZALO APP REALTIME</h3>
+                  <h3
+                    className="resume-content-name"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    ZALO APP REALTIME{" "}
+                    <i
+                      class="fa-sharp fa-solid fa-star"
+                      style={{
+                        color: "#ffc107",
+                        marginLeft: "8px",
+                        paddingBottom: "3px",
+                        fontSize: "24px",
+                      }}
+                    ></i>
+                  </h3>
                   <p className="resume-content-subname">
                     FRONT-END WEB DEVELOPER
                   </p>
@@ -685,7 +699,48 @@ function App() {
                     class="fa-solid fa-bookmark"
                     style={{ color: "#ffc107" }}
                   ></i>
-                  &nbsp; Header-universe
+                  &nbsp; Note app
+                  <br />
+                  <span className="lead">Description:</span> I built this
+                  application with the goal of helping people record information
+                  conveniently and quickly <br /> on the internet. I divided
+                  into many folders for convenience in management. This is a new
+                  project where I am <br /> exposed to new technologies. I
+                  deployed the client part to Netlify, the server part to
+                  Render.
+                  <br />
+                  <p>
+                    <span className="lead"> Technologies used: </span>
+                    ReactJS, Graphql, Apollo, NodeJS, ExpressJS, Socket.io,
+                    Mongoose, Firebase, MaterialUI...
+                  </p>
+                  <p>
+                    <span className="lead"> Database: </span>
+                    MongoDB.
+                  </p>
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/note-app"
+                    target="_blank"
+                  >
+                    - Source code: https://github.com/quangdung861/note-app
+                  </a>
+                  <br />
+                  <a
+                    className="custome-tag-link"
+                    href="https://ephemeral-starship-6dbba8.netlify.app"
+                    target="_blank"
+                  >
+                    - Project deployment:
+                    https://ephemeral-starship-6dbba8.netlify.app
+                  </a>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-bookmark"
+                    style={{ color: "#ffc107" }}
+                  ></i>
+                  &nbsp; Header universe
                   <br />
                   <a
                     className="custome-tag-link"
