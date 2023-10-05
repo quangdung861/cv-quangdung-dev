@@ -687,103 +687,106 @@ function App() {
                   <span>Sep 2022 - Present</span>
                 </div>
               </div>
-              <p
-                className="resume-content-subname lead"
-                style={{ marginTop: "20px" }}
-              >
-                OTHER PROJECTS
-              </p>
-              <ul style={{ listStyle: "none", paddingLeft: 0 }}>
-                <li>
-                  <i
-                    class="fa-solid fa-bookmark"
-                    style={{ color: "#ffc107" }}
-                  ></i>
-                  &nbsp; Note app
-                  <br />
-                  <span className="lead">Description:</span> I built this
-                  application with the goal of helping people record information
-                  conveniently and quickly on the internet. I divided into many
-                  folders for convenience in management. This is a new project
-                  where I am exposed to new technologies. I deployed the client
-                  part to Netlify, the server part to Render.
-                  <br />
-                  <p>
-                    <span className="lead"> Technologies used: </span>
-                    ReactJS, Graphql, Apollo, NodeJS, ExpressJS, Socket.io,
-                    Mongoose, Firebase, MaterialUI...
+              <div className="resume-content content-flex">
+                <div>
+                  <p className="lead" style={{ marginTop: "20px" }}>
+                    OTHER PROJECTS
                   </p>
-                  <p>
-                    <span className="lead"> Database: </span>
-                    MongoDB.
-                  </p>
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/note-app"
-                    target="_blank"
-                  >
-                    - Source code: https://github.com/quangdung861/note-app
-                  </a>
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://ephemeral-starship-6dbba8.netlify.app"
-                    target="_blank"
-                  >
-                    - Project deployment:
-                    https://ephemeral-starship-6dbba8.netlify.app
-                  </a>
-                </li>
-                <li>
-                  <i
-                    class="fa-solid fa-bookmark"
-                    style={{ color: "#ffc107" }}
-                  ></i>
-                  &nbsp; Header universe
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://header-universe-animation.vercel.app"
-                    target="_blank"
-                  >
-                    - Project deployment:
-                    https://header-universe-animation.vercel.app/
-                  </a>
-                </li>
-                <li>
-                  <i
-                    class="fa-solid fa-bookmark"
-                    style={{ color: "#ffc107" }}
-                  ></i>
-                  &nbsp; Play tailwind css
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/play-tailwind-css"
-                    target="_blank"
-                  >
-                    - Source code:
-                    https://github.com/quangdung861/play-tailwind-css
-                  </a>
-                </li>
-                <li>
-                  <i
-                    class="fa-solid fa-bookmark"
-                    style={{ color: "#ffc107" }}
-                  ></i>
-                  &nbsp; Vehicle rental website
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/vehicle-rental-website.git"
-                    target="_blank"
-                  >
-                    - Source code:
-                    https://github.com/quangdung861/vehicle-rental-website.git
-                  </a>
-                </li>
-                <li>&nbsp; &nbsp; &nbsp; ...</li>
-              </ul>
+                  <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+                    <li>
+                      <i
+                        class="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Note app
+                      <br />
+                      <span className="lead">Description:</span> I built this
+                      application with the goal of helping people record
+                      information conveniently and quickly on the internet. I
+                      divided into many folders for convenience in management.
+                      This is a new project where I am exposed to new
+                      technologies. I deployed the client part to Netlify, the
+                      server part to Render.
+                      <br />
+                      <p>
+                        <span className="lead"> Technologies used: </span>
+                        ReactJS, Graphql, Apollo, NodeJS, ExpressJS, Socket.io,
+                        Mongoose, Firebase, MaterialUI...
+                      </p>
+                      <p>
+                        <span className="lead"> Database: </span>
+                        MongoDB.
+                      </p>
+                      <a
+                        className="custome-tag-link"
+                        href="https://github.com/quangdung861/note-app"
+                        target="_blank"
+                      >
+                        - Source code: https://github.com/quangdung861/note-app
+                      </a>
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://ephemeral-starship-6dbba8.netlify.app"
+                        target="_blank"
+                      >
+                        - Project deployment:
+                        https://ephemeral-starship-6dbba8.netlify.app
+                      </a>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Header universe
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://header-universe-animation.vercel.app"
+                        target="_blank"
+                      >
+                        - Project deployment:
+                        https://header-universe-animation.vercel.app/
+                      </a>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Play tailwind css
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://github.com/quangdung861/play-tailwind-css"
+                        target="_blank"
+                      >
+                        - Source code:
+                        https://github.com/quangdung861/play-tailwind-css
+                      </a>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Vehicle rental website
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://github.com/quangdung861/vehicle-rental-website.git"
+                        target="_blank"
+                      >
+                        - Source code:
+                        https://github.com/quangdung861/vehicle-rental-website.git
+                      </a>
+                    </li>
+                    <li>&nbsp; &nbsp; &nbsp; ...</li>
+                  </ul>
+                </div>
+                <div className="resume-date"></div>
+              </div>
             </div>
           </div>
         </div>
