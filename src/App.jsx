@@ -703,11 +703,10 @@ function App() {
                   <br />
                   <span className="lead">Description:</span> I built this
                   application with the goal of helping people record information
-                  conveniently and quickly <br /> on the internet. I divided
-                  into many folders for convenience in management. This is a new
-                  project where I am <br /> exposed to new technologies. I
-                  deployed the client part to Netlify, the server part to
-                  Render.
+                  conveniently and quickly on the internet. I divided into many
+                  folders for convenience in management. This is a new project
+                  where I am exposed to new technologies. I deployed the client
+                  part to Netlify, the server part to Render.
                   <br />
                   <p>
                     <span className="lead"> Technologies used: </span>
@@ -893,7 +892,8 @@ function App() {
                 <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Proficient in Web
-                    Development languages like HTML5, CSS3, Javascript.
+                    Development languages like HTML5, CSS3, Javascript,
+                    Typescript.
                   </li>
                   <li>
                     <i class="fa-solid fa-check"></i> &nbsp; Experience in using
