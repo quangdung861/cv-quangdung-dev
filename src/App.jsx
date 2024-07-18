@@ -29,7 +29,7 @@ function App() {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 10) {
         setShowBtnUpToTop(true);
       } else {
         setShowBtnUpToTop(false);
@@ -61,7 +61,7 @@ function App() {
           <img className="img-avatar" src={avatar} alt="" />
         </div>
         <i
-          class="fa-solid fa-bars btn-hamburger"
+          className="fa-solid fa-bars btn-hamburger"
           onClick={() => setShowNavListMobile(!showNavListMobile)}
         ></i>
       </div>
@@ -92,25 +92,32 @@ function App() {
             href="#list-item-3"
             onClick={() => setShowNavListMobile(false)}
           >
-            EDUCATION
+            EXPERIENCES
           </a>
           <a
             className="sidebar-item list-group-item list-group-item-action"
             href="#list-item-4"
             onClick={() => setShowNavListMobile(false)}
           >
-            SKILLS
+            EDUCATION
           </a>
           <a
             className="sidebar-item list-group-item list-group-item-action"
             href="#list-item-5"
             onClick={() => setShowNavListMobile(false)}
           >
-            INTERESTS
+            SKILLS
           </a>
           <a
             className="sidebar-item list-group-item list-group-item-action"
             href="#list-item-6"
+            onClick={() => setShowNavListMobile(false)}
+          >
+            INTERESTS
+          </a>
+          <a
+            className="sidebar-item list-group-item list-group-item-action"
+            href="#list-item-7"
             onClick={() => setShowNavListMobile(false)}
           >
             THE END
@@ -121,7 +128,7 @@ function App() {
         data-bs-spy="scroll"
         data-bs-target="list-resume-section"
         data-bs-smooth-scroll="true"
-        tabindex="0"
+        tabIndex="0"
         className="container-section"
       >
         <div id="list-item-1" className="resume-section">
@@ -139,7 +146,7 @@ function App() {
                 textTransform: "uppercase",
               }}
             >
-              <i class="fa-solid fa-address-card"></i> · fullstack web developer
+              <i className="fa-solid fa-address-card"></i> · fullstack web developer
             </div>
             <div
               style={{
@@ -151,7 +158,7 @@ function App() {
                 marginBottom: "24px",
               }}
             >
-              <i class="fa-solid fa-map"></i> · 82 nguyen luong bang street,
+              <i className="fa-solid fa-map"></i> · 82 nguyen luong bang street,
               lien chieu district, da nang city · <br />
               <span style={{ color: "#079992" }}>quangdung861@gmail.com</span>
             </div>
@@ -168,9 +175,9 @@ function App() {
               "A little bit of fragrance always clings to the hands that gives
               flowers!"
             </p>
-            <p style={{ marginBottom: "50px" }}>
+            <p style={{ marginBottom: "8px" }}>
               <span className="lead">
-                <i class="fa-brands fa-react"></i> Front-End:
+                <i className="fa-brands fa-react"></i> Front-End:
               </span>{" "}
               I am experienced in{" "}
               <span className="lead">
@@ -179,33 +186,43 @@ function App() {
               </span>
               etc
             </p>
+            <p style={{ marginBottom: "50px" }}>
+              <span className="lead">
+                <i className="fa-brands fa-react"></i> Back-End:
+              </span>{" "}
+              I am experienced in{" "}
+              <span className="lead">
+                NestJS, TypeOrm, Firebase, MySql...
+              </span>
+              etc
+            </p>
             <a
               className="box-icon-social"
               href="https://github.com/quangdung861"
               target="_blank"
             >
-              <i class="fa-brands fa-github icon-social"></i>
+              <i className="fa-brands fa-github icon-social"></i>
             </a>
             <a
               className="box-icon-social"
               target="_blank"
               href="https://www.facebook.com/dungquangphandev"
             >
-              <i class="fa-brands fa-facebook icon-social"></i>
+              <i className="fa-brands fa-facebook icon-social"></i>
             </a>
             <a
               className="box-icon-social"
               href="https://www.linkedin.com/in/phan-quang-dung-898476259/"
               target="_blank"
             >
-              <i class="fa-brands fa-linkedin icon-social"></i>
+              <i className="fa-brands fa-linkedin icon-social"></i>
             </a>
             <a
               className="box-icon-social"
               href="https://www.facebook.com/messages/t/100003857673185/"
               target="_blank"
             >
-              <i class="fa-brands fa-facebook-messenger icon-social"></i>
+              <i className="fa-brands fa-facebook-messenger icon-social"></i>
             </a>
           </div>
         </div>
@@ -220,9 +237,9 @@ function App() {
                     className="resume-content-name"
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    ZALO APP REALTIME{" "}
+                    DE VINC OFFICAL{" "}
                     <i
-                      class="fa-sharp fa-solid fa-star"
+                      className="fa-sharp fa-solid fa-star"
                       style={{
                         color: "#ffc107",
                         marginLeft: "8px",
@@ -232,14 +249,122 @@ function App() {
                     ></i>
                   </h3>
                   <p className="resume-content-subname">
-                    FRONT-END WEB DEVELOPER
+                    FULLSTACK WEB DEVELOPER
                   </p>
                   <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> This is an online chat
+                    <i className="fa-solid fa-bookmark"></i> This is the officially
+                    released version of domain devinc.vn
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>{" "}
+                    <span className="lead">Description:</span> I am the main
+                    author of this project which is an e-commerce project, the
+                    project is released for end users to use with the domain
+                    name devinc.vn, I take on roles such as, structural design
+                    projects, functional specifications as well as tasks that
+                    need to be implemented in terms of UI design, Database
+                    structure design, deployment to the production environment,
+                    and at the same time responsible for developing both Back
+                    end and Front end, I also Perform necessary quality checks
+                    to ensure a smooth project launch. Provides a great
+                    experience, intuitive and easy-to-use interface. Regarding
+                    the specification of temporary functions, you can refer to
+                    my De Vinc project below which is quite complete.
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+                    <span className="lead"> Technologies used: </span>
+                    ReactJS, NestJS, TypeOrm, Redux-Toolkit, Redux-Saga...etc
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+                    <span className="lead"> Database: </span>
+                    MySQL, Firebase.
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+                    <span className="lead"> My responsibilities: </span>
+                    <br />
+                    • Perform product and project analysis
+                    <br />
+                    • Project structure design
+                    <br />
+                    • Design database structure
+                    <br />
+                    • Design UI <br />
+                    • Front end construction <br />
+                    • Back end construction <br />
+                    • Perform quality control <br />
+                    • Deploy to production environment <br />
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      - Gained experience and skills on:
+                    </span>
+                    <br />
+                    • Experience using NestJS <br />
+                    • Experience using ReactJS <br />
+                    • Experience using TypeORM <br />
+                    • Have experience with MySQL database <br />
+                    • Experience using Firsebase SDK V9 <br />
+                    • Experience using Cloud Frisestore, Authentication <br />
+                    • Experience in Responsive design <br />
+                    • Experience in git, github <br />
+                  </p>
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/de-vinc-front-end.git"
+                    target="_blank"
+                  >
+                    - FE Source code:
+                    https://github.com/quangdung861/de-vinc-front-end.git
+                  </a>
+                  <br />
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/de-vinc-back-end.git"
+                    target="_blank"
+                  >
+                    - BE Source code:
+                    https://github.com/quangdung861/de-vinc-back-end.git
+                  </a>
+                  <br />
+                </div>
+                <div className="resume-date">
+                  <span>June 2024</span>
+                </div>
+              </div>
+            </div>
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
+                  <h3
+                    className="resume-content-name"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    ZALO APP REALTIME{" "}
+                    <i
+                      className="fa-sharp fa-solid fa-star"
+                      style={{
+                        color: "#ffc107",
+                        marginLeft: "8px",
+                        paddingBottom: "3px",
+                        fontSize: "24px",
+                      }}
+                    ></i>
+                  </h3>
+                  <p className="resume-content-subname">
+                    FULLSTACK WEB DEVELOPER
+                  </p>
+                  <p className="content-item lead">
+                    <i className="fa-solid fa-bookmark"></i> This is an online chat
                     site
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>{" "}
+                    <i className="fa-solid fa-bookmark"></i>{" "}
                     <span className="lead">Description:</span> This is a website
                     for people to connect as long as you have a Google account,
                     Github you can login in seconds without spending time on
@@ -251,7 +376,7 @@ function App() {
                     functions.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> My responsibilities: </span> <br />
                     • Design UI <br />• Register, login, logout account Google,
                     Github, Email <br />
@@ -316,11 +441,11 @@ function App() {
                     FRONT-END WEB DEVELOPER
                   </p>
                   <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> This is a website that
+                    <i className="fa-solid fa-bookmark"></i> This is a website that
                     sells courses.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> My responsibilities: </span> <br />
                     • Design UI <br />
                     • Register account <br />
@@ -387,11 +512,11 @@ function App() {
                     FRONT-END WEB DEVELOPER
                   </p>
                   <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> This is where I
+                    <i className="fa-solid fa-bookmark"></i> This is where I
                     describe myself.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> My responsibilities: </span> <br />
                     • Design UI <br />
                     <span
@@ -445,11 +570,11 @@ function App() {
                     FRONT-END WEB DEVELOPER
                   </p>
                   <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> Trello is a list maker
+                    <i className="fa-solid fa-bookmark"></i> Trello is a list maker
                     app.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>{" "}
+                    <i className="fa-solid fa-bookmark"></i>{" "}
                     <span className="lead">Description:</span> Trello is a
                     flexible task management tool where teams can plan,
                     collaborate on projects, organize workflow, and track
@@ -461,22 +586,22 @@ function App() {
                     the desired progress.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> Programming language: </span>
                     HTML, SASS, JavaScript.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> Technologies used: </span>
                     ReactJS, React bootstrap, React smooth dnd, React icons.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> Code editor: </span>
                     Visual Studio Code.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> My responsibilities: </span> <br />
                     <span
                       style={{
@@ -543,25 +668,16 @@ function App() {
                     style={{ display: "flex", alignItems: "center" }}
                   >
                     DE VINC
-                    <i
-                      class="fa-sharp fa-solid fa-star"
-                      style={{
-                        color: "#ffc107",
-                        marginLeft: "8px",
-                        paddingBottom: "3px",
-                        fontSize: "24px",
-                      }}
-                    ></i>
                   </h3>
                   <p className="resume-content-subname">
                     FRONT-END WEB DEVELOPER
                   </p>
                   <p className="content-item lead">
-                    <i class="fa-solid fa-bookmark"></i> Online clothing
+                    <i className="fa-solid fa-bookmark"></i> Online clothing
                     ordering system.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>{" "}
+                    <i className="fa-solid fa-bookmark"></i>{" "}
                     <span className="lead">Description:</span> An online
                     clothing ordering system is a website that provides
                     customers with a means of ordering clothes online and
@@ -587,28 +703,28 @@ function App() {
                     between users and administrators.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> Programming language: </span>
                     HTML, CSS, JavaScript.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> Technologies used: </span>
                     ReactJS, Ant Design, React-Hook, React Router,
                     Redux-Toolkit, Redux-Hook, Redux-Saga, Styled-Components.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> Code editor: </span>
                     Visual Studio Code.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> Database: </span>
                     JSON Server.
                   </p>
                   <p className="content-item">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <i className="fa-solid fa-bookmark"></i>
                     <span className="lead"> My responsibilities: </span> <br />
                     <span
                       style={{
@@ -695,7 +811,7 @@ function App() {
                   <ul style={{ listStyle: "none", paddingLeft: 0 }}>
                     <li>
                       <i
-                        class="fa-solid fa-bookmark"
+                        className="fa-solid fa-bookmark"
                         style={{ color: "#ffc107" }}
                       ></i>
                       &nbsp; Note app
@@ -736,7 +852,7 @@ function App() {
                     </li>
                     <li>
                       <i
-                        class="fa-solid fa-bookmark"
+                        className="fa-solid fa-bookmark"
                         style={{ color: "#ffc107" }}
                       ></i>
                       &nbsp; Header universe
@@ -752,7 +868,7 @@ function App() {
                     </li>
                     <li>
                       <i
-                        class="fa-solid fa-bookmark"
+                        className="fa-solid fa-bookmark"
                         style={{ color: "#ffc107" }}
                       ></i>
                       &nbsp; Play tailwind css
@@ -768,7 +884,7 @@ function App() {
                     </li>
                     <li>
                       <i
-                        class="fa-solid fa-bookmark"
+                        className="fa-solid fa-bookmark"
                         style={{ color: "#ffc107" }}
                       ></i>
                       &nbsp; Vehicle rental website
@@ -793,6 +909,83 @@ function App() {
         <hr className="division-line" />
         <div id="list-item-3" className="resume-section">
           <div className="resume-section-detail">
+            <h2 className="title">EXPERIENCES</h2>
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
+                  <h3 className="resume-content-name">
+                    NUS - NATIONAL UNIVERSIRY OF SINGAPORE
+                  </h3>
+                  <p
+                    className="resume-content-subname"
+                    style={{ textTransform: "uppercase" }}
+                  >
+                    This is software deployed for the National University of
+                    Singapore <br /> with the aim of providing lifelong courses.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Working at Avepoint
+                    company.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> More than 100 members
+                    worldwide contribute to this project including developers,
+                    QA, BA... enough to show the importance of the project.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Join as a front-end
+                    developer.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Work with leading
+                    industry experts from abroad.
+                  </p>
+                </div>
+                <div className="resume-date">
+                  <span>Nov 2023 - Present</span>
+                </div>
+              </div>
+              <div className="resume-content content-flex">
+                <div>
+                  <h3 className="resume-content-name">
+                    HRIS - HUMAN RESOURCE MANAGEMENT SYSTEM
+                  </h3>
+                  <p
+                    className="resume-content-subname"
+                    style={{ textTransform: "uppercase" }}
+                  >
+                    This is the latest human resource management software
+                    deployed <br /> for direct use by Avepoint, and
+                    commercialized.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Working at Avepoint
+                    company.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> More than 50 members
+                    worldwide contribute to this project including developers,
+                    QA, BA... enough to show the importance of the project.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Join as a front-end
+                    developer.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Work with leading
+                    industry experts from abroad.
+                  </p>
+                </div>
+                <div className="resume-date">
+                  <span>Jun 2024 - Present</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="division-line" />
+        <div id="list-item-4" className="resume-section">
+          <div className="resume-section-detail">
             <h2 className="title">EDUCATION</h2>
             <div className="resume-item">
               <div className="resume-content content-flex">
@@ -808,23 +1001,23 @@ function App() {
                     Front-End Programming course.
                   </p>
                   <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> Here I learn from basic
+                    <i className="fa-solid fa-bookmark"></i> Here I learn from basic
                     to advanced how to write and apply new and practical
                     technologies in building websites with HTML, CSS, SASS,
                     Bootstrap, Javascript, ReactJS, Redux, NodeJS...
                   </p>
                   <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> I really like my
+                    <i className="fa-solid fa-bookmark"></i> I really like my
                     school, here I get to work with everyone.
                   </p>
                   <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> After college, I
+                    <i className="fa-solid fa-bookmark"></i> After college, I
                     succeeded with my graduation thesis on programming: ReactJS,
                     Redux, AntDesign... build a multi-functional e-commerce
                     website.
                   </p>
                   <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> My graduate thesis was
+                    <i className="fa-solid fa-bookmark"></i> My graduate thesis was
                     granted 9.5/10, reached the top 3rd highest score in the
                     whole class. I was very happy about that moment.
                   </p>
@@ -841,18 +1034,18 @@ function App() {
                     DEVELOP MY CAREER AS A DEVELOPER.
                   </p>
                   <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> When I was a student, I
+                    <i className="fa-solid fa-bookmark"></i> When I was a student, I
                     studied a lot about career development in information
                     technology and then I decided to choose web programming
                     because I particularly like customize and draw on my
                     websites.
                   </p>
                   <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> I really enjoy my
+                    <i className="fa-solid fa-bookmark"></i> I really enjoy my
                     school, where I make new friends and we study together.
                   </p>
                   <p className="content-item ">
-                    <i class="fa-solid fa-bookmark"></i> After college, I
+                    <i className="fa-solid fa-bookmark"></i> After college, I
                     succeeded with my graduation thesis on programming: PHP,
                     mySQL, building online ordering application.
                   </p>
@@ -865,7 +1058,7 @@ function App() {
           </div>
         </div>
         <hr className="division-line" />
-        <div id="list-item-4" className="resume-section">
+        <div id="list-item-5" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">SKILL</h2>
             <div className="resume-item">
@@ -876,97 +1069,97 @@ function App() {
                 </p>
                 <ul className="list-inline">
                   <li className="list-inline-item">
-                    <i class="fa-brands fa-react react-icon"></i>
-                    <i class="fa-brands fa-js javascript-icon"></i>
-                    <i class="fa-brands fa-node-js nodejs-icon"></i>
-                    <i class="fa-brands fa-html5 html5-icon"></i>
-                    <i class="fa-brands fa-css3-alt css3-icon"></i>
-                    <i class="fa-brands fa-bootstrap bootstrap-icon"></i>
-                    <i class="fa-brands fa-npm npm-icon"></i>
-                    <i class="fa-brands fa-github github-icon"></i>
-                    <i class="fa-brands fa-git-alt git-icon"></i>
-                    <i class="fa-brands fa-trello trello-icon"></i>
-                    <i class="fa-brands fa-sass sass-icon"></i>
-                    <i class="fa-solid fa-font-awesome font-awesome-icon"></i>
-                    <i class="fa-brands fa-yarn yarn-icon"></i>
+                    <i className="fa-brands fa-react react-icon"></i>
+                    <i className="fa-brands fa-js javascript-icon"></i>
+                    <i className="fa-brands fa-node-js nodejs-icon"></i>
+                    <i className="fa-brands fa-html5 html5-icon"></i>
+                    <i className="fa-brands fa-css3-alt css3-icon"></i>
+                    <i className="fa-brands fa-bootstrap bootstrap-icon"></i>
+                    <i className="fa-brands fa-npm npm-icon"></i>
+                    <i className="fa-brands fa-github github-icon"></i>
+                    <i className="fa-brands fa-git-alt git-icon"></i>
+                    <i className="fa-brands fa-trello trello-icon"></i>
+                    <i className="fa-brands fa-sass sass-icon"></i>
+                    <i className="fa-solid fa-font-awesome font-awesome-icon"></i>
+                    <i className="fa-brands fa-yarn yarn-icon"></i>
                   </li>
                 </ul>
                 <p className="resume-content-subname">TECHNICAL</p>
                 <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Proficient in Web
+                    <i className="fa-solid fa-check"></i> &nbsp; Proficient in Web
                     Development languages like HTML5, CSS3, Javascript,
                     Typescript.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     Bootstrap, Ant Design, MaterialUI, Tailwind CSS.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     ReactJS, VueJS.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
+                    NestJS, NodeJS, ExpressJS.
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     React-Hook.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     React Router, Vue Router.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     Redux, Redux-Toolkit, Vuex.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     Redux-Hook.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     Redux-thunk, Redux-Saga.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in using
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
                     Sass, Styled-Components..
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
                     Responsive Design.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in Json
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in Json
                     Server, Json Server Auth, MirageJS.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
                     RESTful API, Fetch, Axios.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
                     Firebase SDK V9, Firestore Cloud, Authentication.
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
-                    NodeJS, ExpressJS.
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Experience in
-                    MongoDB, Mongoose.
+                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
+                    MongoDB, Mongoose, MySQL, TypeORM.
                   </li>
                   <li>&nbsp; &nbsp; &nbsp; ...</li>
                 </ul>
                 <p className="resume-content-subname">WORKFLOW</p>
                 <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Git, Github for
+                    <i className="fa-solid fa-check"></i> &nbsp; Git, Github, Gitlab for
                     Teamwork
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Testing & Debugging
+                    <i className="fa-solid fa-check"></i> &nbsp; Testing & Debugging & Sonarqube
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Trello, Google
+                    <i className="fa-solid fa-check"></i> &nbsp; Jira, Trello, Google
                     meet, Zoom
                   </li>
                   <li>&nbsp; &nbsp; &nbsp; ...</li>
@@ -976,20 +1169,20 @@ function App() {
                 </p>
                 <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; Lodash
+                    <i className="fa-solid fa-check"></i> &nbsp; Lodash
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; NodeJs
+                    <i className="fa-solid fa-check"></i> &nbsp; NodeJs
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; TypeScript
+                    <i className="fa-solid fa-check"></i> &nbsp; TypeScript
                   </li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp; FireBase
+                    <i className="fa-solid fa-check"></i> &nbsp; FireBase
                   </li>
                   <li>&nbsp; &nbsp; &nbsp; ...</li>
                   <li>
-                    <i class="fa-solid fa-check"></i> &nbsp;
+                    <i className="fa-solid fa-check"></i> &nbsp;
                     <span style={{ fontStyle: "italic" }}>
                       If you do not have an awesome brain, you have to
                       ceaselessly learn!
@@ -1001,7 +1194,7 @@ function App() {
           </div>
         </div>
         <hr className="division-line" />
-        <div id="list-item-5" className="resume-section">
+        <div id="list-item-6" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">INTERESTS</h2>
             <div className="resume-item">
@@ -1034,7 +1227,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div id="list-item-6" className="resume-section">
+        <div id="list-item-7" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">THE END</h2>
             <div className="resume-item">
@@ -1061,7 +1254,7 @@ function App() {
       </div>
       {showBtnUpToTop && (
         <div className="up-to-top" onClick={() => handleUpToTop()}>
-          <i class="bi bi-chevron-double-up up-to-top-icon"></i>
+          <i className="bi bi-chevron-double-up up-to-top-icon"></i>
         </div>
       )}
 
