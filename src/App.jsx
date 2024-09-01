@@ -929,8 +929,7 @@ function App() {
                   </p>
                   <p className="content-item ">
                     <i className="fa-solid fa-bookmark"></i> More than 100 members
-                    worldwide contribute to this project including developers,
-                    QA, BA... enough to show the importance of the project.
+                    worldwide.
                   </p>
                   <p className="content-item ">
                     <i className="fa-solid fa-bookmark"></i> Join as a front-end
@@ -964,8 +963,7 @@ function App() {
                   </p>
                   <p className="content-item ">
                     <i className="fa-solid fa-bookmark"></i> More than 50 members
-                    worldwide contribute to this project including developers,
-                    QA, BA... enough to show the importance of the project.
+                    worldwide.
                   </p>
                   <p className="content-item ">
                     <i className="fa-solid fa-bookmark"></i> Join as a front-end
