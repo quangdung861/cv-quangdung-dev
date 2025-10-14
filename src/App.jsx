@@ -237,7 +237,7 @@ function App() {
                     className="resume-content-name"
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    DE VINC OFFICAL{" "}
+                    DE VINC OFFICIAL{" "}
                     <i
                       className="fa-sharp fa-solid fa-star"
                       style={{
