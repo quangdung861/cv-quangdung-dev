@@ -188,11 +188,11 @@ function App() {
             </p>
             <p style={{ marginBottom: "50px" }}>
               <span className="lead">
-                <i className="fa-brands fa-react"></i> Back-End:
+                <i class="fa-solid fa-database"></i> Back-End:
               </span>{" "}
               I am experienced in{" "}
               <span className="lead">
-                NestJS, TypeOrm, Firebase, MySql...
+                NodeJs, NestJS, TypeOrm, Firebase, MySql...
               </span>
               etc
             </p>
@@ -332,6 +332,13 @@ function App() {
                     https://github.com/quangdung861/de-vinc-back-end.git
                   </a>
                   <br />
+                   <a
+                      className="custome-tag-link"
+                      href="https://devinc.vn"
+                      target="_blank"
+                    >
+                      - Project deployment: https://devinc.vn
+                    </a>
                 </div>
                 <div className="resume-date">
                   <span>June 2024</span>
@@ -790,13 +797,6 @@ function App() {
                       https://github.com/quangdung861/project-devinc-website
                     </a>
                     <br />
-                    <a
-                      className="custome-tag-link"
-                      href="https://devinc.vn"
-                      target="_blank"
-                    >
-                      - Project deployment: https://devinc.vn
-                    </a>
                   </p>
                 </div>
                 <div className="resume-date">
@@ -914,7 +914,7 @@ function App() {
               <div className="resume-content content-flex">
                 <div>
                   <h3 className="resume-content-name">
-                    NUS - NATIONAL UNIVERSIRY OF SINGAPORE
+                    NUS - NATIONAL UNIVERSITY OF SINGAPORE (AVEPOINT COMPANY)
                   </h3>
                   <p
                     className="resume-content-subname"
@@ -924,20 +924,22 @@ function App() {
                     Singapore <br /> with the aim of providing lifelong courses.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> Working at Avepoint
-                    company.
+                    <i className="fa-solid fa-bookmark"></i> Project size: 100+ members across multiple countries.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> More than 100 members
-                    worldwide.
+                    <i className="fa-solid fa-bookmark"></i> Collaborated directly with international senior engineers in architecture and review sessions.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> Join as a front-end
-                    developer.
+                    <i className="fa-solid fa-bookmark"></i> Responsible for developing new UI modules, improving user experience, and refactoring legacy components to enhance performance.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> Work with leading
-                    industry experts from abroad.
+                    <i className="fa-solid fa-bookmark"></i> Participated in bug fixing, API integration, and optimizing rendering in complex page flows.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Implemented responsive layouts and ensured cross-browser compatibility for key learning modules.
+                  </p>
+                  <p className="content-item ">
+                    <i className="fa-solid fa-bookmark"></i> Worked closely with QA and product teams to validate feature requirements, handle feedback, and support release cycles.
                   </p>
                 </div>
                 <div className="resume-date">
@@ -947,7 +949,7 @@ function App() {
               <div className="resume-content content-flex">
                 <div>
                   <h3 className="resume-content-name">
-                    HRIS - HUMAN RESOURCE MANAGEMENT SYSTEM
+                    HRIS - HUMAN RESOURCE MANAGEMENT SYSTEM (AVEPOINT COMPANY)
                   </h3>
                   <p
                     className="resume-content-subname"
@@ -958,20 +960,16 @@ function App() {
                     commercialized.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> Working at Avepoint
-                    company.
+                    <i className="fa-solid fa-bookmark"></i> Project size: 50+ members globally.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> More than 50 members
-                    worldwide.
+                    <i className="fa-solid fa-bookmark"></i> Worked with product owners from US/Europe to understand key HR workflows.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> Join as a front-end
-                    developer.
+                    <i className="fa-solid fa-bookmark"></i> Built and maintained employee management modules, attendance dashboards, and workflow-related features.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> Work with leading
-                    industry experts from abroad.
+                    <i className="fa-solid fa-bookmark"></i> Improved UI consistency, implemented role-based access, and collaborated in QA/production deployments.
                   </p>
                 </div>
                 <div className="resume-date">
