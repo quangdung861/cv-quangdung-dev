@@ -85,14 +85,14 @@ function App() {
             href="#list-item-2"
             onClick={() => setShowNavListMobile(false)}
           >
-            PROJECTS
+            EXPERIENCES
           </a>
           <a
             className="sidebar-item list-group-item list-group-item-action"
             href="#list-item-3"
             onClick={() => setShowNavListMobile(false)}
           >
-            EXPERIENCES
+            PROJECTS
           </a>
           <a
             className="sidebar-item list-group-item list-group-item-action"
@@ -108,16 +108,16 @@ function App() {
           >
             SKILLS
           </a>
-          <a
+          {/*   <a
             className="sidebar-item list-group-item list-group-item-action"
             href="#list-item-6"
             onClick={() => setShowNavListMobile(false)}
           >
             INTERESTS
-          </a>
+          </a> */}
           <a
             className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-7"
+            href="#list-item-6"
             onClick={() => setShowNavListMobile(false)}
           >
             THE END
@@ -158,8 +158,7 @@ function App() {
                 marginBottom: "24px",
               }}
             >
-              <i className="fa-solid fa-map"></i> · 82 nguyen luong bang street,
-              lien chieu district, da nang city · <br />
+              <i className="fa-solid fa-map"></i> · da nang city, vietnam · <br />
               <span style={{ color: "#079992" }}>quangdung861@gmail.com</span>
             </div>
             <p style={{ fontSize: "1.2rem", lineHeight: "2rem" }}>
@@ -179,10 +178,9 @@ function App() {
               <span className="lead">
                 <i className="fa-brands fa-react"></i> Front-End:
               </span>{" "}
-              I am experienced in{" "}
+              Experienced in{" "}
               <span className="lead">
-                Javascript on ReactJS FrameWork, using Redux, Axios,
-                Bootstrap...
+                JavaScript (ES6+) with ReactJS, using Redux, Axios, Bootstrap, and related libraries...
               </span>
               etc
             </p>
@@ -190,9 +188,9 @@ function App() {
               <span className="lead">
                 <i class="fa-solid fa-database"></i> Back-End:
               </span>{" "}
-              I am experienced in{" "}
+              Experienced in{" "}
               <span className="lead">
-                NodeJs, NestJS, TypeOrm, Firebase, MySql...
+                Node.js, NestJS, TypeORM, Firebase, and MySQL...
               </span>
               etc
             </p>
@@ -205,20 +203,6 @@ function App() {
             </a>
             <a
               className="box-icon-social"
-              target="_blank"
-              href="https://www.facebook.com/dungquangphandev"
-            >
-              <i className="fa-brands fa-facebook icon-social"></i>
-            </a>
-            <a
-              className="box-icon-social"
-              href="https://www.linkedin.com/in/phan-quang-dung-898476259/"
-              target="_blank"
-            >
-              <i className="fa-brands fa-linkedin icon-social"></i>
-            </a>
-            <a
-              className="box-icon-social"
               href="https://www.facebook.com/messages/t/100003857673185/"
               target="_blank"
             >
@@ -228,686 +212,6 @@ function App() {
         </div>
         <hr className="division-line" />
         <div id="list-item-2" className="resume-section">
-          <div className="resume-section-detail">
-            <h2 className="title">PROJECTS</h2>
-            <div className="resume-item">
-              <div className="resume-content content-flex">
-                <div>
-                  <h3
-                    className="resume-content-name"
-                    style={{ display: "flex", alignItems: "center" }}
-                  >
-                    DE VINC OFFICIAL{" "}
-                    <i
-                      className="fa-sharp fa-solid fa-star"
-                      style={{
-                        color: "#ffc107",
-                        marginLeft: "8px",
-                        paddingBottom: "3px",
-                        fontSize: "24px",
-                      }}
-                    ></i>
-                  </h3>
-                  <p className="resume-content-subname">
-                    FULLSTACK WEB DEVELOPER
-                  </p>
-                  <p className="content-item lead">
-                    <i className="fa-solid fa-bookmark"></i> This is the officially
-                    released version of domain devinc.vn
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>{" "}
-                    <span className="lead">Description:</span> I am the main
-                    author of this project which is an e-commerce project, the
-                    project is released for end users to use with the domain
-                    name devinc.vn, I take on roles such as, structural design
-                    projects, functional specifications as well as tasks that
-                    need to be implemented in terms of UI design, Database
-                    structure design, deployment to the production environment,
-                    and at the same time responsible for developing both Back
-                    end and Front end, I also Perform necessary quality checks
-                    to ensure a smooth project launch. Provides a great
-                    experience, intuitive and easy-to-use interface. Regarding
-                    the specification of temporary functions, you can refer to
-                    my De Vinc project below which is quite complete.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Technologies used: </span>
-                    ReactJS, NestJS, TypeOrm, Redux-Toolkit, Redux-Saga...etc
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Database: </span>
-                    MySQL, Firebase.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span>
-                    <br />
-                    • Perform product and project analysis
-                    <br />
-                    • Project structure design
-                    <br />
-                    • Design database structure
-                    <br />
-                    • Design UI <br />
-                    • Front end construction <br />
-                    • Back end construction <br />
-                    • Perform quality control <br />
-                    • Deploy to production environment <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Gained experience and skills on:
-                    </span>
-                    <br />
-                    • Experience using NestJS <br />
-                    • Experience using ReactJS <br />
-                    • Experience using TypeORM <br />
-                    • Have experience with MySQL database <br />
-                    • Experience using Firsebase SDK V9 <br />
-                    • Experience using Cloud Frisestore, Authentication <br />
-                    • Experience in Responsive design <br />
-                    • Experience in git, github <br />
-                  </p>
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/de-vinc-front-end.git"
-                    target="_blank"
-                  >
-                    - FE Source code:
-                    https://github.com/quangdung861/de-vinc-front-end.git
-                  </a>
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/de-vinc-back-end.git"
-                    target="_blank"
-                  >
-                    - BE Source code:
-                    https://github.com/quangdung861/de-vinc-back-end.git
-                  </a>
-                  <br />
-                   <a
-                      className="custome-tag-link"
-                      href="https://devinc.vn"
-                      target="_blank"
-                    >
-                      - Project deployment: https://devinc.vn
-                    </a>
-                </div>
-                <div className="resume-date">
-                  <span>June 2024</span>
-                </div>
-              </div>
-            </div>
-            <div className="resume-item">
-              <div className="resume-content content-flex">
-                <div>
-                  <h3
-                    className="resume-content-name"
-                    style={{ display: "flex", alignItems: "center" }}
-                  >
-                    ZALO APP REALTIME{" "}
-                    <i
-                      className="fa-sharp fa-solid fa-star"
-                      style={{
-                        color: "#ffc107",
-                        marginLeft: "8px",
-                        paddingBottom: "3px",
-                        fontSize: "24px",
-                      }}
-                    ></i>
-                  </h3>
-                  <p className="resume-content-subname">
-                    FULLSTACK WEB DEVELOPER
-                  </p>
-                  <p className="content-item lead">
-                    <i className="fa-solid fa-bookmark"></i> This is an online chat
-                    site
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>{" "}
-                    <span className="lead">Description:</span> This is a website
-                    for people to connect as long as you have a Google account,
-                    Github you can login in seconds without spending time on
-                    complicated authentication steps, the reason is I use
-                    Fisebase and it did that for me, in the app you can send
-                    friend requests to the people you want and other people can
-                    also find you, and from there people connect and chat with
-                    each other in real time, now I'm still developing more
-                    functions.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
-                    • Design UI <br />• Register, login, logout account Google,
-                    Github, Email <br />
-                    with Authentication in Firebase <br />
-                    • Realtime Invitation Sent, Receive, Recall <br />
-                    • Realtime Approve, reject friend request <br />
-                    • Chat realtime with Cloud Firestore in Firebase <br />
-                    • View, edit user infomation <br />
-                    • User classification <br />
-                    • Create group chat <br />
-                    • Create My Cloud as a place to store personal data <br />•
-                    Filter by category, keywords, descending & ascending <br />
-                    • Show latest and unseen messages <br />
-                    • See if the user is online <br />
-                    • React-slick, react-carousel <br />
-                    • Emoji-mart <br />
-                    • MomentJS <br />
-                    • React router dom <br />
-                    • Styled components, Sass <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Gained experience and skills on:
-                    </span>
-                    <br />
-                    • Experience using Firsebase SDK V9 <br />
-                    • Experience using Cloud Frisestore, Authentication <br />
-                    • Have experience with hierarchical database <br />
-                    • Experience using Emoji-mart, audio <br />
-                    • Experience in Responsive design <br />
-                    • Experience in git, github <br />
-                  </p>
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/zalo-app.git"
-                    target="_blank"
-                  >
-                    - Source code: https://github.com/quangdung861/zalo-app.git
-                  </a>
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://zalo-app-mu.vercel.app"
-                    target="_blank"
-                  >
-                    - Project deployment: https://zalo-app-mu.vercel.app
-                  </a>
-                </div>
-                <div className="resume-date">
-                  <span>May 2023</span>
-                </div>
-              </div>
-            </div>
-            <div className="resume-item">
-              <div className="resume-content content-flex">
-                <div>
-                  <h3 className="resume-content-name">F8 FULLSTACK.EDU.VN</h3>
-                  <p className="resume-content-subname">
-                    FRONT-END WEB DEVELOPER
-                  </p>
-                  <p className="content-item lead">
-                    <i className="fa-solid fa-bookmark"></i> This is a website that
-                    sells courses.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
-                    • Design UI <br />
-                    • Register account <br />
-                    • Login, logout <br />
-                    • Courses, posts, videos filter <br />
-                    • Json server, json server auth, json web token <br />
-                    • Redux toolkit, redux saga <br />
-                    • Axios, fetch <br />
-                    • Styled component, sass <br />• Change avatar, cover
-                    convert to base64 and vice verca <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Gained experience and skills on:
-                    </span>
-                    <br />
-                    • Experience in using reactJS <br />
-                    • Experience in using fontawesome
-                    <br />
-                    • Experience in convert base64
-                    <br />
-                    • Experience in using react-slick, slick-carousel
-                    <br />
-                    • Design sass, styled components
-                    <br />
-                    • Experience using animation
-                    <br />
-                    • Experience in using redux toolkit, saga, axios
-                    <br />
-                    • Experience in Responsive design
-                    <br />
-                  </p>
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/clone-f8-website.git"
-                    target="_blank"
-                  >
-                    - Source code:
-                    https://github.com/quangdung861/clone-f8-website.git
-                  </a>
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://clone-f8-website.vercel.app"
-                    target="_blank"
-                  >
-                    - Project deployment: https://clone-f8-website.vercel.app
-                  </a>
-                </div>
-                <div className="resume-date">
-                  <span>May 2023</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="resume-item">
-              <div className="resume-content content-flex">
-                <div>
-                  <h3 className="resume-content-name">CV PROFILE ONLINE</h3>
-                  <p className="resume-content-subname">
-                    FRONT-END WEB DEVELOPER
-                  </p>
-                  <p className="content-item lead">
-                    <i className="fa-solid fa-bookmark"></i> This is where I
-                    describe myself.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
-                    • Design UI <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Gained experience and skills on:
-                    </span>
-                    <br />
-                    • Experience in using viteJS <br />
-                    • Experience in using fontawesome
-                    <br />
-                    • Design UI with BootstrapV5.2, Sass
-                    <br />
-                    • Experience handle event scroll, image
-                    <br />
-                    • Experience in using deploy project in github
-                    <br />
-                    • Experience in Responsive design
-                    <br />
-                  </p>
-                  <a
-                    className="custome-tag-link"
-                    href="https://github.com/quangdung861/cv-quangdung-dev.git"
-                    target="_blank"
-                  >
-                    - Source code:
-                    https://github.com/quangdung861/cv-quangdung-dev.git
-                  </a>
-                  <br />
-                  <a
-                    className="custome-tag-link"
-                    href="https://quangdung861.github.io/cv-quangdung-dev"
-                    target="_blank"
-                  >
-                    - Project deployment:
-                    https://quangdung861.github.io/cv-quangdung-dev
-                  </a>
-                </div>
-                <div className="resume-date">
-                  <span>Apr 2023</span>
-                </div>
-              </div>
-
-              <div className="resume-content content-flex">
-                <div>
-                  <h3 className="resume-content-name">TRELLO</h3>
-                  <p className="resume-content-subname">
-                    FRONT-END WEB DEVELOPER
-                  </p>
-                  <p className="content-item lead">
-                    <i className="fa-solid fa-bookmark"></i> Trello is a list maker
-                    app.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>{" "}
-                    <span className="lead">Description:</span> Trello is a
-                    flexible task management tool where teams can plan,
-                    collaborate on projects, organize workflow, and track
-                    progress in an intuitive, efficient, and rewarding way. From
-                    ideation, planning to execution, Trello manages milestones
-                    and daily tasks as they work together and help the team get
-                    things done. Here we can add and delete tables and smaller
-                    elements like columns and cards, arranging them according to
-                    the desired progress.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Programming language: </span>
-                    HTML, SASS, JavaScript.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Technologies used: </span>
-                    ReactJS, React bootstrap, React smooth dnd, React icons.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Code editor: </span>
-                    Visual Studio Code.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Customer:
-                    </span>
-                    <br />
-                    • Design UI <br />
-                    • Create column, card <br />
-                    • Update, delete column <br />
-                    • Drag and drop column, card <br />
-                    • Create static path <br />
-                    • Creating shared variables <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Gained experience and skills on:
-                    </span>
-                    <br />
-                    • Experience git, github like branch, pull, push, commit,
-                    amend, log... <br />
-                    • Experience write file README.md <br />
-                    • Design UI with React Bootstrap, Sass, React icons. <br />
-                    • Experience working with git according to actual
-                    processDatabase design and analysis fake <br />
-                    • Experience creating shared variables <br />
-                    • Experience in using eslint. <br />
-                    • Experience in using jsconfig.json. <br />
-                    • Experience in Responsive design <br />
-                    <a
-                      className="custome-tag-link"
-                      href="https://github.com/quangdung861/trello-quangdungdev-web.git"
-                      target="_blank"
-                    >
-                      - Source code:
-                      https://github.com/quangdung861/trello-quangdungdev-web.git
-                    </a>
-                    <br />
-                    <a
-                      className="custome-tag-link"
-                      href="https://quangdung861.github.io/trello-quangdungdev-web"
-                      target="_blank"
-                    >
-                      - Project deployment:
-                      https://quangdung861.github.io/trello-quangdungdev-web
-                    </a>
-                  </p>
-                </div>
-                <div className="resume-date">
-                  <span>Jan 2023 - Apr 2023</span>
-                </div>
-              </div>
-
-              <div className="resume-content content-flex">
-                <div>
-                  <h3
-                    className="resume-content-name"
-                    style={{ display: "flex", alignItems: "center" }}
-                  >
-                    DE VINC
-                  </h3>
-                  <p className="resume-content-subname">
-                    FRONT-END WEB DEVELOPER
-                  </p>
-                  <p className="content-item lead">
-                    <i className="fa-solid fa-bookmark"></i> Online clothing
-                    ordering system.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>{" "}
-                    <span className="lead">Description:</span> An online
-                    clothing ordering system is a website that provides
-                    customers with a means of ordering clothes online and
-                    aggregating information about news, products, and discounts.
-                    Customers can order clothes on the website. Users can order
-                    without logging in to an account to facilitate purchases.
-                    After selecting the product, the user is directed to the
-                    product detail page where the user can view the product
-                    information and perform the actions to select the size if
-                    available and add to the cart. Then he can move out and
-                    continue shopping or redirect to cart to make transaction
-                    where user can apply discount code and ship when qualified.
-                    Then continue to be redirected to the payment gateway where
-                    the user enters the delivery information and payment method
-                    and completes the order process. Users can update their
-                    profile and can also view their order history if logged in.
-                    <br />
-                    <br />
-                    On the admin side, you can perform the functions of adding,
-                    editing and deleting products with many easy customization
-                    options. View and process orders placed by users. View the
-                    list of users. Make sure to decentralize the scope of access
-                    between users and administrators.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Programming language: </span>
-                    HTML, CSS, JavaScript.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Technologies used: </span>
-                    ReactJS, Ant Design, React-Hook, React Router,
-                    Redux-Toolkit, Redux-Hook, Redux-Saga, Styled-Components.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Code editor: </span>
-                    Visual Studio Code.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> Database: </span>
-                    JSON Server.
-                  </p>
-                  <p className="content-item">
-                    <i className="fa-solid fa-bookmark"></i>
-                    <span className="lead"> My responsibilities: </span> <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Customer:
-                    </span>
-                    <br />
-                    • Design UI <br />
-                    • Create view Homepage, List of Product, the Detail
-                    information of Product <br />
-                    • Sign up for the newsletter <br />
-                    • Register account <br />
-                    • Login, Logout <br />
-                    • Product filter <br />
-                    • Order products with options, quantity <br />
-                    • View CartPage, paymentPage <br />
-                    • View Voucher, Voucher Ship <br />• Cart update. Select and
-                    unselect voucher, voucher ship <br />• Add payment
-                    information including payment method address <br />
-                    • View purchase history and order details <br />
-                    • View and update user information. View and create, update,
-                    shipping address <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Administrators:
-                    </span>
-                    <br />
-                    • Login, Logout <br />
-                    • View Order list, List of Product, List of Customers <br />
-                    • Create new and update products with options <br />
-                    • Order processing according to actual process with the
-                    statuses of approval, push through the carries, delivery
-                    confirmation, exchange, cancellation <br />
-                    • User manager <br />
-                    <span
-                      style={{
-                        color: "#079992",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      - Gained experience and skills on:
-                    </span>
-                    <br />
-                    • Design UI with Ant Design <br />
-                    • Database design and analysis <br />
-                    • Working with redux toolkit <br />
-                    • Working with API <br />
-                    • Experience in using ReactJS <br />
-                    • Experience in Responsive design <br />
-                    <a
-                      className="custome-tag-link"
-                      href="https://github.com/quangdung861/project-devinc-website"
-                      target="_blank"
-                    >
-                      - Source code:
-                      https://github.com/quangdung861/project-devinc-website
-                    </a>
-                    <br />
-                  </p>
-                </div>
-                <div className="resume-date">
-                  <span>Sep 2022 - Present</span>
-                </div>
-              </div>
-              <div className="resume-content content-flex">
-                <div>
-                  <p className="lead" style={{ marginTop: "20px" }}>
-                    OTHER PROJECTS
-                  </p>
-                  <ul style={{ listStyle: "none", paddingLeft: 0 }}>
-                    <li>
-                      <i
-                        className="fa-solid fa-bookmark"
-                        style={{ color: "#ffc107" }}
-                      ></i>
-                      &nbsp; Note app
-                      <br />
-                      <span className="lead">Description:</span> I built this
-                      application with the goal of helping people record
-                      information conveniently and quickly on the internet. I
-                      divided into many folders for convenience in management.
-                      This is a new project where I am exposed to new
-                      technologies. I deployed the client part to Netlify, the
-                      server part to Render.
-                      <br />
-                      <p>
-                        <span className="lead"> Technologies used: </span>
-                        ReactJS, Graphql, Apollo, NodeJS, ExpressJS, Socket.io,
-                        Mongoose, Firebase, MaterialUI...
-                      </p>
-                      <p>
-                        <span className="lead"> Database: </span>
-                        MongoDB.
-                      </p>
-                      <a
-                        className="custome-tag-link"
-                        href="https://github.com/quangdung861/note-app"
-                        target="_blank"
-                      >
-                        - Source code: https://github.com/quangdung861/note-app
-                      </a>
-                      <br />
-                      <a
-                        className="custome-tag-link"
-                        href="https://ephemeral-starship-6dbba8.netlify.app"
-                        target="_blank"
-                      >
-                        - Project deployment:
-                        https://ephemeral-starship-6dbba8.netlify.app
-                      </a>
-                    </li>
-                    <li>
-                      <i
-                        className="fa-solid fa-bookmark"
-                        style={{ color: "#ffc107" }}
-                      ></i>
-                      &nbsp; Header universe
-                      <br />
-                      <a
-                        className="custome-tag-link"
-                        href="https://header-universe-animation.vercel.app"
-                        target="_blank"
-                      >
-                        - Project deployment:
-                        https://header-universe-animation.vercel.app/
-                      </a>
-                    </li>
-                    <li>
-                      <i
-                        className="fa-solid fa-bookmark"
-                        style={{ color: "#ffc107" }}
-                      ></i>
-                      &nbsp; Play tailwind css
-                      <br />
-                      <a
-                        className="custome-tag-link"
-                        href="https://github.com/quangdung861/play-tailwind-css"
-                        target="_blank"
-                      >
-                        - Source code:
-                        https://github.com/quangdung861/play-tailwind-css
-                      </a>
-                    </li>
-                    <li>
-                      <i
-                        className="fa-solid fa-bookmark"
-                        style={{ color: "#ffc107" }}
-                      ></i>
-                      &nbsp; Vehicle rental website
-                      <br />
-                      <a
-                        className="custome-tag-link"
-                        href="https://github.com/quangdung861/vehicle-rental-website.git"
-                        target="_blank"
-                      >
-                        - Source code:
-                        https://github.com/quangdung861/vehicle-rental-website.git
-                      </a>
-                    </li>
-                    <li>&nbsp; &nbsp; &nbsp; ...</li>
-                  </ul>
-                </div>
-                <div className="resume-date"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="division-line" />
-        <div id="list-item-3" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">EXPERIENCES</h2>
             <div className="resume-item">
@@ -980,6 +284,561 @@ function App() {
           </div>
         </div>
         <hr className="division-line" />
+        <div id="list-item-3" className="resume-section">
+          <div className="resume-section-detail">
+            <h2 className="title">PROJECTS</h2>
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
+                  <h3
+                    className="resume-content-name"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    DE VINC OFFICIAL{" "}
+                    <i
+                      className="fa-sharp fa-solid fa-star"
+                      style={{
+                        color: "#ffc107",
+                        marginLeft: "8px",
+                        paddingBottom: "3px",
+                        fontSize: "24px",
+                      }}
+                    ></i>
+                  </h3>
+                  <p className="resume-content-subname">
+                    FULLSTACK WEB DEVELOPER
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>{" "}
+                    <span className="lead">Description:</span> A commercial product showcase website deployed for end users at devinc.vn.
+                    The system displays product information, promotions and categories, with a
+                    direct “Contact to Order” flow. Users are redirected to Zalo for ordering
+                    instead of using a cart or checkout.
+                    Includes an admin dashboard for managing products, images, categories, and
+                    promotions.
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+                    <span className="lead"> Technologies: </span>
+                    ReactJS, NestJS (REST APIs), MySQL, Cloudflare, Matbao, TiDB, Cloudinary,
+                    Render...etc
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+                    <span className="lead"> Responsibilities: </span>
+                    <br />
+                    • Requirement analysis & project architecture <br />
+                    • Database schema & backend structure design <br />
+                    • Develop both Frontend & Backend <br />
+                    • Develop product listing, detail, and search pages <br />
+                    • Implement Zalo ordering flow <br />
+                    • Admin dashboard (product, category management) <br />
+                    • Deployment setup: DNS, SSL, hosting <br />
+                    • Performance optimization, QA <br />
+
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Key Achievements:
+                    </span>
+                    <br />
+                    • Successfully deployed a real-world commercial product <br />
+                    • Solid fullstack experience with NestJS, MySQL, TiDB, Cloud infrastructure <br />
+                    • Stable production deployment with Cloudflare, Render, Cloudinary <br />
+                  </p>
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/de-vinc-front-end.git"
+                    target="_blank"
+                  >
+                    - Frontend Source: https://github.com/quangdung861/de-vinc-front-end.git
+                  </a>
+                  <br />
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/de-vinc-back-end.git"
+                    target="_blank"
+                  >
+                    - Backend Source: https://github.com/quangdung861/de-vinc-back-end.git
+                  </a>
+                  <br />
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://devinc.vn"
+                    target="_blank"
+                  >
+                    - Production: https://devinc.vn
+                  </a>
+
+                </div>
+                <div className="resume-date">
+                  <span>June 2024</span>
+                </div>
+              </div>
+            </div>
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
+                  <h3
+                    className="resume-content-name"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    ZALO APP REALTIME{" "}
+                    <i
+                      className="fa-sharp fa-solid fa-star"
+                      style={{
+                        color: "#ffc107",
+                        marginLeft: "8px",
+                        paddingBottom: "3px",
+                        fontSize: "24px",
+                      }}
+                    ></i>
+                  </h3>
+                  <p className="resume-content-subname">
+                    FULLSTACK WEB DEVELOPER
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+                    <span className="lead"> Description: </span>
+                    <br />
+                    Realtime chat application with social login, friend requests, group chat,
+                    cloud storage, and online status tracking.
+                    <br />
+
+                    <span className="lead"> Technologies: </span>
+                    <br />
+                    ReactJS, Firebase SDK v9 (Auth, Firestore), Emoji-mart, Sass
+                    <br />
+
+                    <span className="lead"> Responsibilities: </span>
+                    <br />
+                    • Social login (Google, GitHub, Email)
+                    <br />
+                    • Realtime friend request flows (send / receive / cancel / approve / reject)
+                    <br />
+                    • Realtime chat, group chat, personal cloud storage
+                    <br />
+                    • Show online status, unseen messages, and filtering
+                    <br />
+                    • UI with Styled-Components & Sass
+                    <br />
+
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Key Achievements:
+                    </span>
+                    <br />
+                    • Deep experience with Firebase v9, hierarchical database design, realtime features
+                    <br />
+                  </p>
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/zalo-app"
+                    target="_blank"
+                  >
+                    - Source code: https://github.com/quangdung861/zalo-app
+                  </a>
+                  <br />
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://zalo-app-mu.vercel.app"
+                    target="_blank"
+                  >
+                    - Demo: https://zalo-app-mu.vercel.app
+                  </a>
+
+                </div>
+                <div className="resume-date">
+                  <span>May 2023</span>
+                </div>
+              </div>
+            </div>
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
+                  <h3 className="resume-content-name">F8 FULLSTACK.EDU.VN</h3>
+                  <p className="resume-content-subname">
+                    FRONT-END WEB DEVELOPER
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+                    <span className="lead"> Technologies: </span>
+                    <br />
+                    ReactJS, Redux Toolkit, Redux-Saga, JSON Server Auth, Styled-Components,
+                    Sass, Axios, React Slick
+                    <br />
+
+                    <span className="lead"> Responsibilities: </span>
+                    <br />
+                    • Implement authentication (register / login)
+                    <br />
+                    • Course list, video player, filtering, post
+                    <br />
+                    • Slider components (React Slick), animations
+                    <br />
+                    • Build REST API with JSON Server + JWT
+                    <br />
+                    • Fully responsive layout
+                    <br />
+
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Key Achievements:
+                    </span>
+                    <br />
+                    • Strong skills in auth flow, Redux Saga, token management, reusable components
+                    <br />
+                  </p>
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/clone-f8-website"
+                    target="_blank"
+                  >
+                    - Source code: https://github.com/quangdung861/clone-f8-website
+                  </a>
+                  <br />
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://clone-f8-website.vercel.app"
+                    target="_blank"
+                  >
+                    - Demo: https://clone-f8-website.vercel.app
+                  </a>
+                </div>
+                <div className="resume-date">
+                  <span>May 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="resume-item">
+              <div className="resume-content content-flex">
+                <div>
+                  <h3 className="resume-content-name">CV PROFILE ONLINE</h3>
+                  <p className="resume-content-subname">
+                    FRONT-END WEB DEVELOPER
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+
+                    <span className="lead"> Description: </span>
+                    <br />
+                    Online CV website showcasing personal information, skills, experience, and
+                    portfolio sections with smooth animations and responsive design.
+                    <br />
+
+                    <span className="lead"> Technologies: </span>
+                    <br />
+                    ReactJS, Bootstrap 5.2, Sass, FontAwesome
+                    <br />
+
+                    <span className="lead"> Responsibilities: </span>
+                    <br />
+                    • Implement animations and scrolling effects
+                    <br />
+                    • Build responsive layout for all screen sizes
+                    <br />
+                    • UI/UX design and component structure
+                    <br />
+                    • Deploy application via GitHub Pages
+                    <br />
+
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Key Achievements:
+                    </span>
+                    <br />
+                    • Improved UI design skills and responsive layout techniques
+                    <br />
+                    • Experience with GitHub Pages deployment and website optimization
+                    <br />
+                  </p>
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/cv-quangdung-dev"
+                    target="_blank"
+                  >
+                    - Source code: https://github.com/quangdung861/cv-quangdung-dev
+                  </a>
+                  <br />
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://quangdung861.github.io/cv-quangdung-dev"
+                    target="_blank"
+                  >
+                    - Demo: https://quangdung861.github.io/cv-quangdung-dev
+                  </a>
+
+                </div>
+                <div className="resume-date">
+                  <span>Apr 2023</span>
+                </div>
+              </div>
+
+              <div className="resume-content content-flex">
+                <div>
+                  <h3 className="resume-content-name">TRELLO</h3>
+                  <p className="resume-content-subname">
+                    FRONT-END WEB DEVELOPER
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+
+                    <span className="lead"> Description: </span>
+                    <br />
+                    Mini Trello clone featuring boards, columns, and cards with drag-and-drop
+                    interaction.
+                    <br />
+
+                    <span className="lead"> Technologies: </span>
+                    <br />
+                    ReactJS, React Bootstrap, React Smooth DnD, Sass
+                    <br />
+
+                    <span className="lead"> Responsibilities: </span>
+                    <br />
+                    • UI design and layout structure
+                    <br />
+                    • Create/update/delete boards, columns, and cards
+                    <br />
+                    • Implement drag & drop using Smooth DnD
+                    <br />
+                    • Organize shared variables, configs, Eslint, jsconfig
+                    <br />
+
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Key Achievements:
+                    </span>
+                    <br />
+                    • Experienced Git workflow, modular folder structure, reusable components,
+                    responsive UI
+                    <br />
+                  </p>
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/trello-quangdungdev-web"
+                    target="_blank"
+                  >
+                    - Source: https://github.com/quangdung861/trello-quangdungdev-web
+                  </a>
+                  <br />
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://quangdung861.github.io/trello-quangdungdev-web"
+                    target="_blank"
+                  >
+                    - Demo: https://quangdung861.github.io/trello-quangdungdev-web
+                  </a>
+
+                </div>
+                <div className="resume-date">
+                  <span>Jan 2023 - Apr 2023</span>
+                </div>
+              </div>
+
+              <div className="resume-content content-flex">
+                <div>
+                  <h3
+                    className="resume-content-name"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    DE VINC
+                  </h3>
+                  <p className="resume-content-subname">
+                    FRONT-END WEB DEVELOPER
+                  </p>
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>
+
+                    <span className="lead"> Description: </span>
+                    <br />
+                    E-commerce website allowing users to browse, filter, add to cart, apply
+                    vouchers, order products, manage profile and view order history. Admin can
+                    manage products, customers, and process orders with multi-step statuses.
+                    <br />
+
+                    <span className="lead"> Technologies: </span>
+                    <br />
+                    ReactJS, Redux Toolkit, Redux-Saga, Ant Design, Styled-Components, JSON Server
+                    <br />
+
+                    <span className="lead"> Responsibilities: </span>
+                    <br />
+                    • Build full customer flows: home, product list/detail, filters, cart,
+                    checkout, vouchers, user profile
+                    <br />
+                    • Implement authentication, authorization, purchase history, shipping address
+                    <br />
+                    • Build admin features: product CRUD, order processing
+                    (approve/ship/deliver/exchange/cancel), user management
+                    <br />
+                    • Handle state management using Redux Toolkit + Saga
+                    <br />
+                    • Design responsive UI using Ant Design
+                    <br />
+
+                    <span
+                      style={{
+                        color: "#079992",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Key Achievements:
+                    </span>
+                    <br />
+                    • Hands-on experience with Redux ecosystem, REST APIs, responsive UI, and
+                    JSON Server
+                    <br />
+                  </p>
+
+                  <a
+                    className="custome-tag-link"
+                    href="https://github.com/quangdung861/project-devinc-website"
+                    target="_blank"
+                  >
+                    - Source: https://github.com/quangdung861/project-devinc-website
+                  </a>
+
+                </div>
+                <div className="resume-date">
+                  <span>Sep 2022 - Present</span>
+                </div>
+              </div>
+              <div className="resume-content content-flex">
+                <div>
+                  <p className="lead" style={{ marginTop: "20px" }}>
+                    OTHER PROJECTS
+                  </p>
+                  <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+                    <li>
+                      <i
+                        className="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Note app
+                      <br />
+                      <span className="lead">Description:</span> I built this
+                      application with the goal of helping people record
+                      information conveniently and quickly on the internet. I
+                      divided into many folders for convenience in management.
+                      This is a new project where I am exposed to new
+                      technologies. I deployed the client part to Netlify, the
+                      server part to Render.
+                      <br />
+                      <p>
+                        <span className="lead"> Technologies used: </span>
+                        ReactJS, Graphql, Apollo, NodeJS, ExpressJS, Socket.io,
+                        Mongoose, Firebase, MaterialUI...
+                      </p>
+                      <p>
+                        <span className="lead"> Database: </span>
+                        MongoDB.
+                      </p>
+                      <a
+                        className="custome-tag-link"
+                        href="https://github.com/quangdung861/note-app"
+                        target="_blank"
+                      >
+                        - Source: https://github.com/quangdung861/note-app
+                      </a>
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://ephemeral-starship-6dbba8.netlify.app"
+                        target="_blank"
+                      >
+                        - Demo:
+                        https://ephemeral-starship-6dbba8.netlify.app
+                      </a>
+                    </li>
+                    <li>
+                      <i
+                        className="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Header universe
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://header-universe-animation.vercel.app"
+                        target="_blank"
+                      >
+                        - Demo:
+                        https://header-universe-animation.vercel.app/
+                      </a>
+                    </li>
+                    <li>
+                      <i
+                        className="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Play tailwind css
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://github.com/quangdung861/play-tailwind-css"
+                        target="_blank"
+                      >
+                        - Source:
+                        https://github.com/quangdung861/play-tailwind-css
+                      </a>
+                    </li>
+                    <li>
+                      <i
+                        className="fa-solid fa-bookmark"
+                        style={{ color: "#ffc107" }}
+                      ></i>
+                      &nbsp; Vehicle rental website
+                      <br />
+                      <a
+                        className="custome-tag-link"
+                        href="https://github.com/quangdung861/vehicle-rental-website.git"
+                        target="_blank"
+                      >
+                        - Source:
+                        https://github.com/quangdung861/vehicle-rental-website.git
+                      </a>
+                    </li>
+                    <li>&nbsp; &nbsp; &nbsp; ...</li>
+                  </ul>
+                </div>
+                <div className="resume-date"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="division-line" />
         <div id="list-item-4" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">EDUCATION</h2>
@@ -989,35 +848,32 @@ function App() {
                   <h3 className="resume-content-name">
                     IVIETTECH PROGRAMING CENTER
                   </h3>
+
                   <p
                     className="resume-content-subname"
                     style={{ textTransform: "uppercase" }}
                   >
-                    I studied and obtained the Certificate of Professional
-                    Front-End Programming course.
+                    Certificate in Professional Front-End Development
                   </p>
-                  <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> Here I learn from basic
-                    to advanced how to write and apply new and practical
-                    technologies in building websites with HTML, CSS, SASS,
-                    Bootstrap, Javascript, ReactJS, Redux, NodeJS...
+
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>{" "}
+                    Learned key Front-End technologies: HTML, CSS/Sass, Bootstrap,
+                    JavaScript, ReactJS, Redux, NodeJS.
                   </p>
-                  <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> I really like my
-                    school, here I get to work with everyone.
+
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>{" "}
+                    Gained hands-on experience working with real project workflows during training.
                   </p>
-                  <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> After college, I
-                    succeeded with my graduation thesis on programming: ReactJS,
-                    Redux, AntDesign... build a multi-functional e-commerce
-                    website.
-                  </p>
-                  <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> My graduate thesis was
-                    granted 9.5/10, reached the top 3rd highest score in the
-                    whole class. I was very happy about that moment.
+
+                  <p className="content-item">
+                    <i className="fa-solid fa-bookmark"></i>{" "}
+                    Completed a multi-functional e-commerce website using ReactJS,
+                    Redux, and Ant Design as the final project.
                   </p>
                 </div>
+
                 <div className="resume-date">
                   <span>Jun 2022 - Dec 2022</span>
                 </div>
@@ -1030,18 +886,18 @@ function App() {
                     DEVELOP MY CAREER AS A DEVELOPER.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> When I was a student, I
+                    <i className="fa-solid fa-bookmark"></i>{" "} When I was a student, I
                     studied a lot about career development in information
                     technology and then I decided to choose web programming
                     because I particularly like customize and draw on my
                     websites.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> I really enjoy my
+                    <i className="fa-solid fa-bookmark"></i>{" "} I really enjoy my
                     school, where I make new friends and we study together.
                   </p>
                   <p className="content-item ">
-                    <i className="fa-solid fa-bookmark"></i> After college, I
+                    <i className="fa-solid fa-bookmark"></i>{" "} After college, I
                     succeeded with my graduation thesis on programming: PHP,
                     mySQL, building online ordering application.
                   </p>
@@ -1056,7 +912,7 @@ function App() {
         <hr className="division-line" />
         <div id="list-item-5" className="resume-section">
           <div className="resume-section-detail">
-            <h2 className="title">SKILL</h2>
+            <h2 className="title">SKILLS</h2>
             <div className="resume-item">
               <div className="resume-content">
                 <h3 className="resume-content-name"></h3>
@@ -1082,115 +938,41 @@ function App() {
                 </ul>
                 <p className="resume-content-subname">TECHNICAL</p>
                 <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Proficient in Web
-                    Development languages like HTML5, CSS3, Javascript,
-                    Typescript.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Bootstrap, Ant Design, MaterialUI, Tailwind CSS.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    ReactJS, VueJS.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
-                    NestJS, NodeJS, ExpressJS.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    React-Hook.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    React Router, Vue Router.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Redux, Redux-Toolkit, Vuex.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Redux-Hook.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Redux-thunk, Redux-Saga.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in using
-                    Sass, Styled-Components..
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
-                    Responsive Design.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in Json
-                    Server, Json Server Auth, MirageJS.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
-                    RESTful API, Fetch, Axios.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
-                    Firebase SDK V9, Firestore Cloud, Authentication.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Experience in
-                    MongoDB, Mongoose, MySQL, TypeORM.
-                  </li>
-                  <li>&nbsp; &nbsp; &nbsp; ...</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; HTML5, CSS3, JavaScript (ES6+), TypeScript</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; ReactJS (Hooks, Context API, React Router)</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Redux, Redux Toolkit, Redux-Saga / Thunk</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; UI Libraries: TailwindCSS, Material UI, Ant Design, Bootstrap</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Sass, Styled-Components</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; RESTful API, Axios, Fetch</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Firebase SDK v9 (Auth, Firestore)</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; MongoDB, Mongoose, MySQL, TypeORM</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; NodeJS, NestJS, ExpressJS</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; JSON Server, MirageJS (Mock API Tools)</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Responsive Web Design</li>
                 </ul>
+
                 <p className="resume-content-subname">WORKFLOW</p>
                 <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Git, Github, Gitlab for
-                    Teamwork
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Testing & Debugging & Sonarqube
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Jira, Trello, Google
-                    meet, Zoom
-                  </li>
-                  <li>&nbsp; &nbsp; &nbsp; ...</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Git, GitHub, GitLab (branching workflow)</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Testing & Debugging</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Jira, Trello</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Agile / Scrum workflow</li>
                 </ul>
-                <p className="resume-content-subname">
-                  LEARNING AND INTERESTED
-                </p>
+
+                <p className="resume-content-subname">LEARNING & INTEREST</p>
                 <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; Lodash
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; NodeJs
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; TypeScript
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp; FireBase
-                  </li>
-                  <li>&nbsp; &nbsp; &nbsp; ...</li>
-                  <li>
-                    <i className="fa-solid fa-check"></i> &nbsp;
-                    <span style={{ fontStyle: "italic" }}>
-                      If you do not have an awesome brain, you have to
-                      ceaselessly learn!
-                    </span>
-                  </li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; TypeScript (Advanced)</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; NodeJS & Backend Development</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Firebase Ecosystem</li>
+                  <li><i className="fa-solid fa-check"></i> &nbsp; Performance Optimization</li>
                 </ul>
+
               </div>
             </div>
           </div>
         </div>
         <hr className="division-line" />
-        <div id="list-item-6" className="resume-section">
+        {/*  <div id="list-item-6" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">INTERESTS</h2>
             <div className="resume-item">
@@ -1222,8 +1004,8 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-        <div id="list-item-7" className="resume-section">
+        </div> */}
+        <div id="list-item-6" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">THE END</h2>
             <div className="resume-item">
