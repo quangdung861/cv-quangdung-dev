@@ -161,7 +161,7 @@ function App() {
               <i className="fa-solid fa-map"></i> · da nang city, vietnam · <br />
               <span style={{ color: "#079992" }}>quangdung861@gmail.com</span>
             </div>
-            <p style={{ fontSize: "1.2rem", lineHeight: "2rem" }}>
+{/*             <p style={{ fontSize: "1.2rem", lineHeight: "2rem" }}>
               Welcome to visit my CV online!
             </p>
             <p
@@ -173,7 +173,7 @@ function App() {
             >
               "A little bit of fragrance always clings to the hands that gives
               flowers!"
-            </p>
+            </p> */}
             <p style={{ marginBottom: "8px" }}>
               <span className="lead">
                 <i className="fa-brands fa-react"></i> Front-End:
