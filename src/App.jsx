@@ -203,7 +203,7 @@ function App() {
             </a>
             <a
               className="box-icon-social"
-              href="https://www.facebook.com/messages/t/100003857673185/"
+              href="https://zalo.me/0935411853"
               target="_blank"
             >
               <i className="fa-brands fa-facebook-messenger icon-social"></i>
