@@ -10,6 +10,8 @@ import interest3 from "./assets/images/interest/interest3.jpg";
 import interest4 from "./assets/images/interest/interest4.jpg";
 import interest6 from "./assets/images/interest/interest6.jpg";
 import interest7 from "./assets/images/interest/interest7.jpg";
+import Sidebar from "./components/Sidebar";
+import SidebarMobile from "./components/SidebarMobile";
 
 function App() {
   const [openModalArea, setOpenModalArea] = useState();
@@ -17,6 +19,9 @@ function App() {
   const [showBtnUpToTop, setShowBtnUpToTop] = useState(false);
 
   const [showNavListMobile, setShowNavListMobile] = useState(false);
+  const [isShow, setIsShow] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [lastLoggedPosition, setLastLoggedPosition] = useState(0);
 
   const interestImages = [
     interest1,
@@ -44,6 +49,31 @@ function App() {
     });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+      if (Math.abs(currentScrollTop - lastLoggedPosition) >= 100) {
+        if (currentScrollTop > lastScrollTop) {
+          if (currentScrollTop >= 200) {
+            setIsShow(false);
+            setShowNavListMobile(false);
+          }
+        } else {
+          setIsShow(true);
+        }
+        setLastLoggedPosition(currentScrollTop);
+      }
+
+      setLastScrollTop(currentScrollTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop, lastLoggedPosition]);
+
   const handleModalArea = (item) => {
     document.getElementById("div-zoom-area").style.display = "block";
     setOpenModalArea(item);
@@ -56,74 +86,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="appbar-collapse">
-        <div className="logo-brand">
-          <img className="img-avatar" src={avatar} alt="" />
-        </div>
-        <i
-          className="fa-solid fa-bars btn-hamburger"
-          onClick={() => setShowNavListMobile(!showNavListMobile)}
-        ></i>
+
+      <div className="sidebar">
+        <SidebarMobile showNavListMobile={showNavListMobile} setShowNavListMobile={setShowNavListMobile} isShow={isShow} />
+        <Sidebar showNavListMobile={showNavListMobile} setShowNavListMobile={setShowNavListMobile} />
       </div>
 
-      <div
-        className={showNavListMobile ? "sidebar-left active" : "sidebar-left"}
-      >
-        <span className="avatar">
-          <img className="img-avatar" src={avatar} alt="" />
-        </span>
-        <div id="list-resume-section" className="sidebar-list list-group">
-          <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-1"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            ABOUT
-          </a>
-          <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-2"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            EXPERIENCES
-          </a>
-          <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-3"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            PROJECTS
-          </a>
-          <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-4"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            EDUCATION
-          </a>
-          <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-5"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            SKILLS
-          </a>
-          {/*   <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-6"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            INTERESTS
-          </a> */}
-          <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-6"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            THE END
-          </a>
-        </div>
-      </div>
       <div
         data-bs-spy="scroll"
         data-bs-target="list-resume-section"
@@ -161,7 +129,7 @@ function App() {
               <i className="fa-solid fa-map"></i> · da nang city, vietnam · <br />
               <span style={{ color: "#079992" }}>quangdung861@gmail.com</span>
             </div>
-{/*             <p style={{ fontSize: "1.2rem", lineHeight: "2rem" }}>
+            {/*             <p style={{ fontSize: "1.2rem", lineHeight: "2rem" }}>
               Welcome to visit my CV online!
             </p>
             <p
@@ -899,7 +867,7 @@ function App() {
                     mySQL, building online ordering application.
                   </p>
                 </div>
-              
+
               </div>
             </div>
           </div>
