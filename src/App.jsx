@@ -874,9 +874,6 @@ function App() {
                   </p>
                 </div>
 
-                <div className="resume-date">
-                  <span>Jun 2022 - Dec 2022</span>
-                </div>
               </div>
               <div className="resume-content content-flex">
                 <div>
@@ -888,7 +885,7 @@ function App() {
                   <p className="content-item ">
                     <i className="fa-solid fa-bookmark"></i>{" "} When I was a student, I
                     studied a lot about career development in information
-                    technology and then I decided to choose web programming
+                    technology and then I decided to choose <br /> web programming
                     because I particularly like customize and draw on my
                     websites.
                   </p>
@@ -902,9 +899,7 @@ function App() {
                     mySQL, building online ordering application.
                   </p>
                 </div>
-                <div className="resume-date">
-                  <span>Aug 2015 - Jan 2019</span>
-                </div>
+              
               </div>
             </div>
           </div>
