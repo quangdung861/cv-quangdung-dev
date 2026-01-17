@@ -3,34 +3,16 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.scss";
 
-import avatar from "./assets/images/avatar.jpg";
-import interest1 from "./assets/images/interest/interest1.jpg";
-import interest2 from "./assets/images/interest/interest2.jpg";
-import interest3 from "./assets/images/interest/interest3.jpg";
-import interest4 from "./assets/images/interest/interest4.jpg";
-import interest6 from "./assets/images/interest/interest6.jpg";
-import interest7 from "./assets/images/interest/interest7.jpg";
 import Sidebar from "./components/Sidebar";
 import SidebarMobile from "./components/SidebarMobile";
 
 function App() {
   const [openModalArea, setOpenModalArea] = useState();
-
   const [showBtnUpToTop, setShowBtnUpToTop] = useState(false);
-
   const [showNavListMobile, setShowNavListMobile] = useState(false);
   const [isShow, setIsShow] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [lastLoggedPosition, setLastLoggedPosition] = useState(0);
-
-  const interestImages = [
-    interest1,
-    interest2,
-    interest3,
-    interest4,
-    interest6,
-    interest7,
-  ];
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -48,6 +30,18 @@ function App() {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    if (!isShow) return;
+
+    const scrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
+    if (!scrollSpyEl) return;
+
+    const spy = bootstrap.ScrollSpy.getInstance(scrollSpyEl);
+    if (spy) {
+      spy.refresh();
+    }
+  }, [isShow, showNavListMobile]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,10 +68,6 @@ function App() {
     };
   }, [lastScrollTop, lastLoggedPosition]);
 
-  const handleModalArea = (item) => {
-    document.getElementById("div-zoom-area").style.display = "block";
-    setOpenModalArea(item);
-  };
 
   const handleCloseModalArea = () => {
     document.getElementById("div-zoom-area").style.display = "none";
@@ -86,12 +76,10 @@ function App() {
 
   return (
     <div className="App">
-
       <div className="sidebar">
         <SidebarMobile showNavListMobile={showNavListMobile} setShowNavListMobile={setShowNavListMobile} isShow={isShow} />
         <Sidebar showNavListMobile={showNavListMobile} setShowNavListMobile={setShowNavListMobile} />
       </div>
-
       <div
         data-bs-spy="scroll"
         data-bs-target="list-resume-section"
@@ -129,19 +117,6 @@ function App() {
               <i className="fa-solid fa-map"></i> · da nang city, vietnam · <br />
               <span style={{ color: "#079992" }}>quangdung861@gmail.com</span>
             </div>
-            {/*             <p style={{ fontSize: "1.2rem", lineHeight: "2rem" }}>
-              Welcome to visit my CV online!
-            </p>
-            <p
-              style={{
-                marginBottom: "24px",
-                fontSize: "1.1rem",
-                fontStyle: "italic",
-              }}
-            >
-              "A little bit of fragrance always clings to the hands that gives
-              flowers!"
-            </p> */}
             <p style={{ marginBottom: "8px" }}>
               <span className="lead">
                 <i className="fa-brands fa-react"></i> Front-End:
@@ -935,39 +910,6 @@ function App() {
           </div>
         </div>
         <hr className="division-line" />
-        {/*  <div id="list-item-6" className="resume-section">
-          <div className="resume-section-detail">
-            <h2 className="title">INTERESTS</h2>
-            <div className="resume-item">
-              <div className="resume-content">
-                <h3 className="resume-content-name"></h3>
-                <p className="resume-content-subname"></p>
-                <p style={{ marginBottom: "8px" }}>
-                  Aside from being a developer, I enjoy most of my free time
-                  enjoying fashion, reading peaceful books.
-                </p>
-                <p style={{ marginBottom: "8px" }}>
-                  In addition, I like to go to the gym, walk, and swim.
-                </p>
-                <p style={{ marginBottom: "20px" }}>
-                  Last but not least, I love to travel and take pictures. Take a
-                  look at some of my pictures:
-                </p>
-                <div className="interest-picture">
-                  {interestImages.map((item, index) => (
-                    <img
-                      key={index}
-                      src={item}
-                      alt=""
-                      className="img-zoomable"
-                      onClick={() => handleModalArea(item)}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div id="list-item-6" className="resume-section">
           <div className="resume-section-detail">
             <h2 className="title">THE END</h2>

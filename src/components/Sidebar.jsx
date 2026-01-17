@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import avatar from "../assets/images/avatar.jpg";
 
 const Sidebar = React.memo(({ showNavListMobile, setShowNavListMobile }) => {
+
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                navRef.current &&
+                !navRef.current.contains(event.target)
+            ) {
+                setShowNavListMobile(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     return (
         <div
             className={showNavListMobile ? "sidebar-left active" : "sidebar-left"}
+            ref={navRef}
         >
             <span className="avatar">
                 <img className="img-avatar" src={avatar} alt="" />
@@ -45,13 +64,6 @@ const Sidebar = React.memo(({ showNavListMobile, setShowNavListMobile }) => {
                 >
                     SKILLS
                 </a>
-                {/*   <a
-            className="sidebar-item list-group-item list-group-item-action"
-            href="#list-item-6"
-            onClick={() => setShowNavListMobile(false)}
-          >
-            INTERESTS
-          </a> */}
                 <a
                     className="sidebar-item list-group-item list-group-item-action"
                     href="#list-item-6"
