@@ -32,17 +32,20 @@ function App() {
   useEffect(() => {
     if (!isShow) return;
 
-    const scrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
-    if (!scrollSpyEl) return;
+    const el = document.querySelector('[data-bs-spy="scroll"]');
+    if (!el) return;
 
-    const spy = bootstrap.ScrollSpy.getInstance(scrollSpyEl);
-    if (!spy) return;
+    const oldSpy = bootstrap.ScrollSpy.getInstance(el);
+    if (oldSpy) {
+      oldSpy.dispose();
+    }
 
-    // Safari cần delay layout
-    setTimeout(() => {
-      spy.refresh();
-    }, 100);
-
+    requestAnimationFrame(() => {
+      new bootstrap.ScrollSpy(el, {
+        target: "#list-resume-section",
+        offset: 100,
+      });
+    });
   }, [isShow, showNavListMobile]);
 
   useEffect(() => {
