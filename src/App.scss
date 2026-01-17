@@ -19,7 +19,8 @@
     }
   }
   .appbar-collapse {
-    display: none;
+    visibility: hidden;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -321,7 +322,7 @@
 
   @media only screen and (max-width: 992px) {
     .appbar-collapse {
-      display: flex;
+      visibility: visible;
     }
     .sidebar-left {
       display: none;

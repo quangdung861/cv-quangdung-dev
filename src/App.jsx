@@ -36,9 +36,13 @@ function App() {
     if (!scrollSpyEl) return;
 
     const spy = bootstrap.ScrollSpy.getInstance(scrollSpyEl);
-    if (spy) {
+    if (!spy) return;
+
+    // Safari cần delay layout
+    setTimeout(() => {
       spy.refresh();
-    }
+    }, 100);
+
   }, [isShow, showNavListMobile]);
 
   useEffect(() => {
